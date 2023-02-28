@@ -10,14 +10,15 @@
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/addons/rating.js"></script>
-<script src="js/"></script>
+    <script src="js/"></script>
     <style>
         .logo {
-            height: 100px;
-            width: 100px;
+            height: 120px;
+            width: 120px;
         }
 
         .bg1 {
@@ -69,8 +70,19 @@
         }
 
         .imgowl {
-            width: 100%;
-        
+            height: 200px;
+            width: 200px !important;
+
+        }
+
+        .card_OC {}
+
+        .checked {
+            color: orange;
+        }
+
+        .unchecked {
+            color: grey;
         }
     </style>
 </head>
@@ -78,7 +90,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg1 ">
         <div class="container-fluid">
-            <img class="logo" src="pictures/logo/handy-vibe-logo-removebg-preview.png" alt="">
+            <img class="logo" src="pictures/logo/nextag-removebg-preview.png" alt="">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -335,21 +347,86 @@
     <br>
     <br>
     <div class="container">
-    <div class="container-fluid">
-        <div class="owl-carousel owl-theme">
-            <div ><img class="imgowl"
-                    src="pictures/owl carousel/louis-vuitton-weekend-tote-pm-monogram-macassar-canvas-bags--M45734_PM2_Front view.webp"
-                    alt="">
+        <div class="container-fluid">
+            <div class="owl-carousel owl-theme">
+                <div class="card_OC">
+                    <img class="imgowl"
+                        src="pictures/owl carousel/louis-vuitton-weekend-tote-pm-monogram-macassar-canvas-bags--M45734_PM2_Front view.webp"
+                        alt="">
+                    <span class="fa fa-star checked" id="st1"></span>
+                    <span class="fa fa-star checked" id="st2"></span>
+                    <span class="fa fa-star checked" id="st3"></span>
+                    <span class="fa fa-star unchecked" id="st4"></span>
+                    <span class="fa fa-star unchecked" id="st5"></span>
+                    <p><small>Louis vuitton</small> </p>
+
+                </div>
+                <div><img class="imgowl"
+                        src="pictures/owl carousel/634131f6fbacbf800e0ebcb532e61f27-removebg-preview.png" alt="">
+                    <span class="fa fa-star checked" id="st6"></span>
+                    <span class="fa fa-star checked" id="st7"></span>
+                    <span class="fa fa-star checked" id="st8"></span>
+                    <span class="fa fa-star unchecked" id="st9"></span>
+                    <span class="fa fa-star unchecked" id="st10"></span>
+                    <p><small>Gucci</small> </p>
+                </div>
+                <div> 
+                    <img class="imgowl" src="pictures/owl carousel/burberry-removebg-preview.png" alt="">
+                    <span class="fa fa-star checked" id="st6"></span>
+                    <span class="fa fa-star checked" id="st7"></span>
+                    <span class="fa fa-star checked" id="st8"></span>
+                    <span class="fa fa-star unchecked" id="st9"></span>
+                    <span class="fa fa-star unchecked" id="st10"></span>
+                    <p><small>Burberry</small> </p>
+ 
+                </div>
+                <div> 
+                    <img class="imgowl" src="pictures/owl carousel/dior-removebg-preview.png" alt=""> 
+                    <span class="fa fa-star checked" id="st6"></span>
+                    <span class="fa fa-star checked" id="st7"></span>
+                    <span class="fa fa-star checked" id="st8"></span>
+                    <span class="fa fa-star unchecked" id="st9"></span>
+                    <span class="fa fa-star unchecked" id="st10"></span>
+                    <p><small>Dior</small> </p>
+ 
+                 </div>
+                <div> <img class="imgowl" src="pictures/owl carousel/wallets 1.jpg" alt="">
+                    <span class="fa fa-star checked" id="st6"></span>
+                    <span class="fa fa-star checked" id="st7"></span>
+                    <span class="fa fa-star checked" id="st8"></span>
+                    <span class="fa fa-star unchecked" id="st9"></span>
+                    <span class="fa fa-star unchecked" id="st10"></span>
+                    <p><small>Louis vuitton</small>
+                </div>
+                <div> <img class="imgowl" src="pictures/owl carousel/wallets_2-removebg-preview.png" alt="">
+                    <span class="fa fa-star checked" id="st6"></span>
+                    <span class="fa fa-star checked" id="st7"></span>
+                    <span class="fa fa-star checked" id="st8"></span>
+                    <span class="fa fa-star unchecked" id="st9"></span>
+                    <span class="fa fa-star unchecked" id="st10"></span>
+                    <p><small>Gucci</small>
+                </div>
+                <div>
+                    <img class="imgowl" src="pictures/owl carousel/burberry_wallets_3-removebg-preview.png" alt=""> 
+                    <span class="fa fa-star checked" id="st6"></span>
+                    <span class="fa fa-star checked" id="st7"></span>
+                    <span class="fa fa-star checked" id="st8"></span>
+                    <span class="fa fa-star unchecked" id="st9"></span>
+                    <span class="fa fa-star unchecked" id="st10"></span>
+                    <p><small>Burberry</small>
+                </div>
+                <div>
+                    <img class="imgowl" src="pictures/owl carousel/prada_wallet-removebg-preview.png" alt="">
+                    <span class="fa fa-star checked" id="st6"></span>
+                    <span class="fa fa-star checked" id="st7"></span>
+                    <span class="fa fa-star checked" id="st8"></span>
+                    <span class="fa fa-star unchecked" id="st9"></span>
+                    <span class="fa fa-star unchecked" id="st10"></span>
+                    <p><small>Prada</small>
+                </div>
             </div>
-            <div><img class="imgowl" src="pictures/owl carousel/" alt=""> </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
         </div>
     </div>
-</div>
     <br>
     <br>
     <div class="container divsupport">
@@ -469,7 +546,7 @@
                             <p>
                                 <a href="#!" class="text-reset">My Account </a>
                             </p>
-                            
+
                             <p>
                                 <a href="#!" class="text-reset">Wishlist</a>
                             </p>
@@ -505,10 +582,10 @@
             $('.owl-carousel').owlCarousel();
         });
     </script>
-
     <script src="js/bootstrap.min.js"></script>
-    
-   
+    <script src="js/rating.js"> </script>
+
+
 
 </body>
 
