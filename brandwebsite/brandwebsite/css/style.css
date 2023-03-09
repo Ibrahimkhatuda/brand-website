@@ -1,0 +1,68 @@
+.logo {
+    height: 85px;
+    width: 87px;
+}
+
+.bg1 {
+    background-color: antiquewhite;
+    font-weight: bold;
+    font-size: larger;
+
+}
+
+.div1 {
+    background-color: antiquewhite;
+}
+
+.img1 {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+
+
+.btn1 {
+    background-color: sienna;
+    border-radius: 10px;
+    color: azure;
+    margin-bottom: 10px;
+}
+
+.divback {
+    background-image: url(pictures/background/newsletter-bkg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+}
+
+.divsupport {
+    background-color: antiquewhite;
+    border: 2px solid sienna;
+    padding: 5px;
+}
+
+.divfoot {
+    color: black;
+}
+
+.divback1 {
+    background-color: antiquewhite;
+}
+
+.imgowl {
+    height: 200px;
+    width: 200px !important;
+
+}
+
+.card_OC {}
+
+.checked {
+    color: orange;
+}
+
+.unchecked {
+    color: grey;
+}
