@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>brand website</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,130 +17,141 @@
     <script src="js/bootstrap.min.js"></script>
     <style>
         a {
-      font-size:14px;
-      font-weight:700
-    }
-    .superNav {
-      font-size:13px;
-    }
-    .form-control {
-      outline:none !important;
-      box-shadow: none !important;
-    }
-    @media screen and (max-width:540px){
-      .centerOnMobile {
-        text-align:center
-      }
-    }
-    .customNavbar{
-        position: absolute;
-    width: 100%;
+            font-size: 14px;
+            font-weight: 700
+        }
+
+        .superNav {
+            font-size: 13px;
+        }
+
+        .form-control {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        @media screen and (max-width:540px) {
+            .centerOnMobile {
+                text-align: center
+            }
+        }
+
+        .customNavbar {
+            /* position: absolute; */
+            /* width: 100%;
     color: white !important;
-    background: linear-gradient(179deg, black, #00000045);
-    }
-    .btnBlack{
-        background: black;
-        color: white;
-        border-radius: 0px;
-        padding: 10px 30px;
-    }
-    .carousel-caption{
-        bottom: 14.25rem !important;
-    }
-    .carousel-caption h1{
-        font-size: 6rem;
-        margin-bottom: 25px;
-        letter-spacing: 10px;
-        font-weight: lighter !important;
-    }
-    .divback{
-        background-image: url('pictures/background/newsletter-bkg.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-    .h1slider{
-        color:black;
-        font-size:xx-large;
-        font-weight: bolder;
-       
-    }
+    background: linear-gradient(179deg, black, #00000045); */
+        }
+
+        .btnBlack {
+            background: black;
+            color: white;
+            border-radius: 0px;
+            padding: 10px 30px;
+        }
+
+        .carousel-caption {
+            bottom: 14.25rem !important;
+        }
+
+        .carousel-caption h1 {
+            font-size: 6rem;
+            margin-bottom: 25px;
+            letter-spacing: 10px;
+            font-weight: lighter !important;
+        }
+
+        .divback {
+            background-image: url('pictures/background/newsletter-bkg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .h1slider {
+            color: black;
+            font-size: xx-large;
+            font-weight: bolder;
+
+        }
+
+        .SliderImg {
+            height: 75vh;
+        }
     </style>
 </head>
 
 <body>
     <div class="superNav border-bottom py-2 bg-light">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile">
-              <select  class="me-3 border-0 bg-light">
-                <option value="en-us">EN-US</option>
-              </select>
-              <span class="d-none d-lg-inline-block d-md-inline-block d-sm-inline-block d-xs-none me-3"><strong>info@somedomain.com</strong></span>
-              <span class="me-3"><i class="fa-solid fa-phone me-1 text-warning"></i> <strong>1-800-123-1234</strong></span>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile">
+                    <select class="me-3 border-0 bg-light">
+                        <option value="en-us">EN-US</option>
+                    </select>
+                    <span
+                        class="d-none d-lg-inline-block d-md-inline-block d-sm-inline-block d-xs-none me-3"><strong>info@somedomain.com</strong></span>
+                    <span class="me-3"><i class="fa-solid fa-phone me-1 text-warning"></i>
+                        <strong>1-800-123-1234</strong></span>
+                </div>
+                <div
+                    class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-none d-lg-block d-md-block-d-sm-block d-xs-none text-end">
+                    <span class="me-3"><i class="fa-solid fa-truck text-muted me-1"></i><a class="text-muted"
+                            href="#">Shipping</a></span>
+                    <span class="me-3"><i class="fa-solid fa-file  text-muted me-2"></i><a class="text-muted"
+                            href="#">Policy</a></span>
+                </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-none d-lg-block d-md-block-d-sm-block d-xs-none text-end">
-              <span class="me-3"><i class="fa-solid fa-truck text-muted me-1"></i><a class="text-muted" href="#">Shipping</a></span>
-              <span class="me-3"><i class="fa-solid fa-file  text-muted me-2"></i><a class="text-muted" href="#">Policy</a></span>
-            </div>
-          </div>
         </div>
-      </div>
-     
-    <div class="container-fluid">
-        
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <nav class="navbar navbar-expand-lg navbar-dark sticky-top  p-3 shadow-sm customNavbar">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light  bg-light sticky-top  p-3 shadow-sm customNavbar">
         <div class="container">
-          <a class="navbar-brand" href="#"><i class="fa-solid fa-shop me-2"></i> <strong>NEXTAG</strong></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <!-- <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
-            <div class="input-group">
-              <span class="border-warning input-group-text bg-warning text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
-              <input type="text" class="form-control border-warning" style="color:#7a7a7a">
-              <button class="btn btn-warning text-white">Search</button>
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-shop me-2"></i> <strong>NEXTAG</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+
+
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="#">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase" href="#">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase" href="#">About</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-cart-shopping me-1"></i>
+                            Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-circle-user me-1"></i>
+                            Account</a>
+                    </li>
+                </ul>
             </div>
-          </div> -->
-          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-            <!-- <div class="ms-auto d-none d-lg-block">
-              <div class="input-group">
-                <span class="border-warning input-group-text bg-warning text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
-                <input type="text" class="form-control border-warning" style="color:#7a7a7a">
-                <button class="btn btn-warning text-white">Search</button>
-              </div>
-            </div> -->
-            <ul class="navbar-nav ms-auto ">
-              <li class="nav-item">
-                <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="#">Offers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2 text-uppercase" href="#">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2 text-uppercase" href="#">Catalog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2 text-uppercase" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2 text-uppercase" href="#">About</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav ms-auto ">
-              <li class="nav-item">
-                <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-cart-shopping me-1"></i> Cart</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-circle-user me-1"></i> Account</a>
-              </li>
-            </ul>
-          </div>
         </div>
-      </nav> 
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    </nav>
+    <div class="container-fluid">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -189,20 +200,22 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+      </div> -->
 
 
-      <!-- ibrahim work comment  -->
-            <!-- <div class="carousel-inner" style="background-color: antiquewhite;">
+            <!-- ibrahim work comment  -->
+            <div class="carousel-inner" style="background-color: antiquewhite;">
                 <div class="carousel-item active">
                     <div class="container-fluid">
                         <div class="row" style="justify-content: center; align-items:center;">
-                            <div class="col sm-12 mb-lg-4">
-                                <img src="pictures/images 1/louis.webp" class="d-block w-100" alt="...">
+                            <div class="col-sm-4 col-lg-4">
+                                <img src="pictures/carousel/sliderimg.jpg" class="d-block SliderImg" alt="...">
                             </div>
-                            <div class="col col sm-12 mb-lg-4">
-                                <h4>Louis Vuitton</h4>
-                                <h1>Handbags By Louis Vuitton For Women.</h1>
+                            <div class="col-sm-12 col-lg-8">
+                                <p class="text-muted m-0"> <small># Most Popular 2023 </small> </p>
+
+                                <h1>Louis Vuitton <br> Handbags By Louis Vuitton For Women.</h1>
+                                <button type="button" class="btn btn1">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -210,12 +223,14 @@
                 <div class="carousel-item">
                     <div class="container-fluid">
                         <div class="row " style="justify-content: center; align-items:center;">
-                            <div class="col sm-12 mb-lg-4">
-                                <img src="pictures/images 1/louis bags men.jpg" class="d-block w-100" alt="...">
+                            <div class="col-sm-12 col-lg-4">
+                                <img src="pictures/carousel/sliderimg2.jpg" class="d-block SliderImg" alt="...">
                             </div>
-                            <div class="col sm-12 mb-lg-4">
-                                <h4>Louis Vuitton</h4>
-                                <h1>Handbags By Louis Vuitton For Men.</h1>
+                            <div class="col-sm-12 col-lg-8">
+                                <p class="text-muted m-0"> <small># Most Popular 2023 </small> </p>
+
+                                <h1>Louis Vuitton <br> Handbags By Louis Vuitton For Women.</h1>
+                                <button type="button" class="btn btn1">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -224,31 +239,20 @@
                 <div class="carousel-item">
                     <div class="container-fluid">
                         <div class="row" style="justify-content: center; align-items:center;">
-                            <div class="col sm-12 mb-lg-4">
-                                <img src="pictures/images 1/gucci.jpg" class="d-block w-100" alt="...">
+                            <div class="col-sm-12 col-lg-4">
+                                <img src="pictures/carousel/sliderimg3.jpg" class="d-block SliderImg" alt="...">
                             </div>
-                            <div class="col sm-12 mb-lg-4">
-                                <h4>Gucci</h4>
-                                <h1>Handbags By Gucci For Women. </h1>
+                            <div class="col-sm-12 col-lg-8">
+                                <p class="text-muted m-0"> <small># Most Popular 2023 </small> </p>
+
+                                <h1>Louis Vuitton <br> Handbags By Louis Vuitton For Women.</h1>
+                                <button type="button" class="btn btn1">Shop Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="carousel-item">
-                    <div class="container-fluid">
-                        <div class="row" style="justify-content: center; align-items:center;">
-                            <div class="col sm-12 mb-lg-4">
-                                <img src="pictures/images 1/burrberry_wwallets-removebg-preview.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="col sm-12 mb-lg-4">
-                                <h4>Burberry</h4>
-                                <h1>Wallets By Burberry For Men. </h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev">
@@ -260,35 +264,173 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </div> -->
-        <!-- </div>
-    </div> -->
-    <br>
-    <br>
-    <div class="container" style="background-color: antiquewhite;">
-        <div class="container-fluid">
-            <div class="row" style=" justify-content: center; align-items:center;">
-                <!-- <h1 style="display: flex; justify-content: center; align-items:center;">Flat Sale</h1> -->
-                <br>
-                <div class="col sm-12 mb-lg-6">
-                    <img style="width: 100%;" src="pictures/grid work images/louis vuitton.jpg" alt="">
-                </div>
-                <br>
-                <div class="col sm-12 mb-lg-6">
-                    <img style="width: 100%;" src="pictures/grid work images/download.jpg" alt="">
-                </div>
             </div>
-            <br>
-            <br>
+
+
+
+        </div>
+        <br>
+        <div class="container">
             <div class="row">
-                <div class="col sm-12 mb-lg-12   text-center" style=" justify-content: center;align-items: center;">
-                    <h4 style="display: flex; justify-content: center;">Flat 30% Discount</h4>
-                    <h1 style="display: flex; justify-content: center;">Men & Women Handbags.</h1>
-                    <button class="btn1" type="button">View
-                        More</button>
+                <div class="col-lg-4">
+                    <div class=" CustomCard">
+                        <div class="subbanners">
+                            <div class="one-third subbanner-part1">
+                                <div class="subbanner-inner">
+                                    <div class="subbanner subbanner1"><a href="#" class="banner-anchor"><img
+                                                src="pictures/sub-banner-3.jpg" alt="sub-banner1"
+                                                class="subbanner-image1"></a>
+                                        <div class="subbanner-detail">
+                                            <div class="offer-title">Flat 30% Discount</div>
+                                            <div class="main-title mb-4">Men &amp; Women Jackets</div>
+                                            <div class="shopnow"><a class="btn btn1" href="#">View More</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+                
+              
+                <div class="col-lg-4">
+                    <div class=" CustomCard">
+                        <div class="subbanners">
+                    
+                          
+                            <div class="one-third subbanner-part3">
+                                <div class="subbanner-inner">
+                                    <div class="subbanner subbanner3"><a href="#" class="banner-anchor"><img
+                                                src="pictures/sub-banner-1.jpg" alt="sub-banner3"
+                                                class="subbanner-image3"></a>
+                                        <div class="subbanner-detail">
+                                            <div class="offer-title">40% Discount</div>
+                                            <div class="main-title mb-4">Girls Clothes Collection</div>
+                                            <div class="shopnow"><a class="btn btn1" href="#">View More</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class=" CustomCard">
+                        <div class="subbanners">
+                            <div class="one-third subbanner-part1">
+                                <div class="subbanner-inner">
+                                    <div class="subbanner subbanner1"><a href="#" class="banner-anchor"><img
+                                                src="pictures/sub-banner-3.jpg" alt="sub-banner1"
+                                                class="subbanner-image1"></a>
+                                        <div class="subbanner-detail">
+                                            <div class="offer-title">Flat 30% Discount</div>
+                                            <div class="main-title mb-4">Men &amp; Women Jackets</div>
+                                            <div class="shopnow"><a class="btn btn1" href="#">View More</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <br>
+        <div class="container div1 ">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col sm-12 mb-lg-6 text-center">
+                                    <img class="img1" src="pictures/carousel/French-businessman-Bernard-Arnault-2017.webp"
+                                        alt="">
+                                    <br>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, fugit
+                                        inventore. Eaque nam placeat voluptatibus, officia velit nemo, fugit suscipit
+                                        nostrum nulla ab, repellat facere quas omnis molestias aspernatur asperiores.
+                                    </p>
+                                    <h6 style="color: sienna;">-Bernard Arnault </h6>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col sm-12 mb-lg-6 text-center">
+                                    <img class="img1" src="pictures/carousel/images.jpg" alt="">
+                                    <br>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, fugit
+                                        inventore. Eaque nam placeat voluptatibus, officia velit nemo, fugit suscipit
+                                        nostrum nulla ab, repellat facere quas omnis molestias aspernatur asperiores.
+                                    </p>
+                                    <h6 style="color: sienna;">-Marco Bizzari </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col sm-12 mb-lg-6 text-center">
+                                    <img class="img1" src="pictures/carousel/images (1).jpg" alt="">
+                                    <br>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, fugit
+                                        inventore. Eaque nam placeat voluptatibus, officia velit nemo, fugit suscipit
+                                        nostrum nulla ab, repellat facere quas omnis molestias aspernatur asperiores.
+                                    </p>
+                                    <h6 style="color: sienna;">-Angela Ahrendts</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid bgImgFixed">
+            <h1>
+                Louis Vuitton
+Handbags By Louis Vuitton For Women.
+<!-- <img src="pictures/carousel/sliderimg2.jpg" alt=""> -->
+
+            </h1>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="col sm-12 mb-lg-12   text-center" style=" justify-content: center;align-items: center;">
+                <h4 style="display: flex; justify-content: center;">Flat 30% Discount</h4>
+                <h1 style="display: flex; justify-content: center;">Men & Women Handbags.</h1>
+                <button class="btn btn1" type="button">View
+                    More</button>
+            </div>
+        </div>
+    </div>
     </div>
     <br>
     <div class="container" style="background-color:antiquewhite;">
@@ -310,7 +452,7 @@
                 <div class="col sm-12 mb-lg-12 text-center" style=" justify-content: center;align-items: center;">
                     <h4 style="display: flex; justify-content: center;">Flat 40% Discount</h4>
                     <h1 style="display: flex; justify-content: center;">Men & Women Wallets.</h1>
-                    <button class="btn1" type="button">View
+                    <button class="btn btn1" type="button">View
                         More</button>
                 </div>
 
@@ -319,168 +461,250 @@
     </div>
     <br>
     <br>
-    <div class="container div1 ">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col sm-12 mb-lg-6 text-center">
-                                <img class="img1" src="pictures/carousel/French-businessman-Bernard-Arnault-2017.webp"
-                                    alt="">
-                                <br>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, fugit
-                                    inventore. Eaque nam placeat voluptatibus, officia velit nemo, fugit suscipit
-                                    nostrum nulla ab, repellat facere quas omnis molestias aspernatur asperiores.
-                                </p>
-                                <h6 style="color: sienna;">-Bernard Arnault </h6>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col sm-12 mb-lg-6 text-center">
-                                <img class="img1" src="pictures/carousel/images.jpg" alt="">
-                                <br>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, fugit
-                                    inventore. Eaque nam placeat voluptatibus, officia velit nemo, fugit suscipit
-                                    nostrum nulla ab, repellat facere quas omnis molestias aspernatur asperiores.
-                                </p>
-                                <h6 style="color: sienna;">-Marco Bizzari </h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col sm-12 mb-lg-6 text-center">
-                                <img class="img1" src="pictures/carousel/images (1).jpg" alt="">
-                                <br>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, fugit
-                                    inventore. Eaque nam placeat voluptatibus, officia velit nemo, fugit suscipit
-                                    nostrum nulla ab, repellat facere quas omnis molestias aspernatur asperiores.
-                                </p>
-                                <h6 style="color: sienna;">-Angela Ahrendts</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <br>
     <br>
     <div class="container text-center">
-        <h3>Our Best Collection</h3>
-        <br>
-        <div class="hr1 text-center" style="width: 100px;color: sienna;">
-            <hr>
-        </div>
-        <br>
-        <h6>New Arrival</h6>
-        <br>
-        <h6>Bestseller product</h6>
-        <br>
-        <h6>Special product</h6>
+        <div class="hometab-heading box-heading">Our best Collection</div>
     </div>
-    <br>
-    <br>
-    <div class="container">
-        <div class="container-fluid">
-            <div class="owl-carousel owl-theme">
-                <div class="card_OC">
-                    <img class="imgowl"
-                        src="pictures/owl carousel/louis-vuitton-weekend-tote-pm-monogram-macassar-canvas-bags--M45734_PM2_Front view.webp"
-                        alt="">
-                    <span class="fa fa-star checked" id="st1"></span>
-                    <span class="fa fa-star checked" id="st2"></span>
-                    <span class="fa fa-star checked" id="st3"></span>
-                    <span class="fa fa-star unchecked" id="st4"></span>
-                    <span class="fa fa-star unchecked" id="st5"></span>
-                    <p><small>Louis vuitton</small> </p>
-
-                </div>
-                <div><img class="imgowl"
-                        src="pictures/owl carousel/634131f6fbacbf800e0ebcb532e61f27-removebg-preview.png" alt="">
-                    <span class="fa fa-star checked" id="st6"></span>
-                    <span class="fa fa-star checked" id="st7"></span>
-                    <span class="fa fa-star checked" id="st8"></span>
-                    <span class="fa fa-star unchecked" id="st9"></span>
-                    <span class="fa fa-star unchecked" id="st10"></span>
-                    <p><small>Gucci</small> </p>
-                </div>
-                <div>
-                    <img class="imgowl" src="pictures/owl carousel/burberry-removebg-preview.png" alt="">
-                    <span class="fa fa-star checked" id="st6"></span>
-                    <span class="fa fa-star checked" id="st7"></span>
-                    <span class="fa fa-star checked" id="st8"></span>
-                    <span class="fa fa-star unchecked" id="st9"></span>
-                    <span class="fa fa-star unchecked" id="st10"></span>
-                    <p><small>Coach</small> </p>
-
-                </div>
-                <div>
-                    <img class="imgowl" src="pictures/owl carousel/dior-removebg-preview.png" alt="">
-                    <span class="fa fa-star checked" id="st6"></span>
-                    <span class="fa fa-star checked" id="st7"></span>
-                    <span class="fa fa-star checked" id="st8"></span>
-                    <span class="fa fa-star unchecked" id="st9"></span>
-                    <span class="fa fa-star unchecked" id="st10"></span>
-                    <p><small>Coach</small> </p>
-
-                </div>
-                <div> <img class="imgowl" src="pictures/owl carousel/wallets 1.jpg" alt="">
-                    <span class="fa fa-star checked" id="st6"></span>
-                    <span class="fa fa-star checked" id="st7"></span>
-                    <span class="fa fa-star checked" id="st8"></span>
-                    <span class="fa fa-star unchecked" id="st9"></span>
-                    <span class="fa fa-star unchecked" id="st10"></span>
-                    <p><small>Louis vuitton</small>
-                </div>
-                <div> <img class="imgowl" src="pictures/owl carousel/wallets_2-removebg-preview.png" alt="">
-                    <span class="fa fa-star checked" id="st6"></span>
-                    <span class="fa fa-star checked" id="st7"></span>
-                    <span class="fa fa-star checked" id="st8"></span>
-                    <span class="fa fa-star unchecked" id="st9"></span>
-                    <span class="fa fa-star unchecked" id="st10"></span>
-                    <p><small>Gucci</small>
-                </div>
-                <div>
-                    <img class="imgowl" src="pictures/owl carousel/prada_wallet-removebg-preview.png" alt="">
-                    <span class="fa fa-star checked" id="st6"></span>
-                    <span class="fa fa-star checked" id="st7"></span>
-                    <span class="fa fa-star checked" id="st8"></span>
-                    <span class="fa fa-star unchecked" id="st9"></span>
-                    <span class="fa fa-star unchecked" id="st10"></span>
-                    <p><small>Louis vuitton</small>
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link navLink active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">New Arrival</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link navLink" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Bestseller product</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link navLink" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Special product</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="owl-carousel owl-theme">
+                        <div class="card_OC">
+                            <img class="imgowl"
+                                src="pictures/owl carousel/louis-vuitton-weekend-tote-pm-monogram-macassar-canvas-bags--M45734_PM2_Front view.webp"
+                                alt="">
+                            <span class="fa fa-star checked" id="st1"></span>
+                            <span class="fa fa-star checked" id="st2"></span>
+                            <span class="fa fa-star checked" id="st3"></span>
+                            <span class="fa fa-star unchecked" id="st4"></span>
+                            <span class="fa fa-star unchecked" id="st5"></span>
+                            <p><small>Louis vuitton</small> </p>
+        
+                        </div>
+                        <div><img class="imgowl"
+                                src="pictures/owl carousel/634131f6fbacbf800e0ebcb532e61f27-removebg-preview.png" alt="">
+                            <span class="fa fa-star checked" id="st6"></span>
+                            <span class="fa fa-star checked" id="st7"></span>
+                            <span class="fa fa-star checked" id="st8"></span>
+                            <span class="fa fa-star unchecked" id="st9"></span>
+                            <span class="fa fa-star unchecked" id="st10"></span>
+                            <p><small>Gucci</small> </p>
+                        </div>
+                        <div>
+                            <img class="imgowl" src="pictures/owl carousel/burberry-removebg-preview.png" alt="">
+                            <span class="fa fa-star checked" id="st6"></span>
+                            <span class="fa fa-star checked" id="st7"></span>
+                            <span class="fa fa-star checked" id="st8"></span>
+                            <span class="fa fa-star unchecked" id="st9"></span>
+                            <span class="fa fa-star unchecked" id="st10"></span>
+                            <p><small>Coach</small> </p>
+        
+                        </div>
+                        <div>
+                            <img class="imgowl" src="pictures/owl carousel/dior-removebg-preview.png" alt="">
+                            <span class="fa fa-star checked" id="st6"></span>
+                            <span class="fa fa-star checked" id="st7"></span>
+                            <span class="fa fa-star checked" id="st8"></span>
+                            <span class="fa fa-star unchecked" id="st9"></span>
+                            <span class="fa fa-star unchecked" id="st10"></span>
+                            <p><small>Coach</small> </p>
+        
+                        </div>
+                        <div> <img class="imgowl" src="pictures/owl carousel/wallets 1.jpg" alt="">
+                            <span class="fa fa-star checked" id="st6"></span>
+                            <span class="fa fa-star checked" id="st7"></span>
+                            <span class="fa fa-star checked" id="st8"></span>
+                            <span class="fa fa-star unchecked" id="st9"></span>
+                            <span class="fa fa-star unchecked" id="st10"></span>
+                            <p><small>Louis vuitton</small>
+                        </div>
+                        <div> <img class="imgowl" src="pictures/owl carousel/wallets_2-removebg-preview.png" alt="">
+                            <span class="fa fa-star checked" id="st6"></span>
+                            <span class="fa fa-star checked" id="st7"></span>
+                            <span class="fa fa-star checked" id="st8"></span>
+                            <span class="fa fa-star unchecked" id="st9"></span>
+                            <span class="fa fa-star unchecked" id="st10"></span>
+                            <p><small>Gucci</small>
+                        </div>
+                        <div>
+                            <img class="imgowl" src="pictures/owl carousel/prada_wallet-removebg-preview.png" alt="">
+                            <span class="fa fa-star checked" id="st6"></span>
+                            <span class="fa fa-star checked" id="st7"></span>
+                            <span class="fa fa-star checked" id="st8"></span>
+                            <span class="fa fa-star unchecked" id="st9"></span>
+                            <span class="fa fa-star unchecked" id="st10"></span>
+                            <p><small>Louis vuitton</small>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="owl-carousel owl-theme">
+                        <div class="card_OC">
+                            <img class="imgowl"
+                                src="pictures/owl carousel/louis-vuitton-weekend-tote-pm-monogram-macassar-canvas-bags--M45734_PM2_Front view.webp"
+                                alt="">
+                            <span class="fa fa-star checked" id="st1"></span>
+                            <span class="fa fa-star checked" id="st2"></span>
+                            <span class="fa fa-star checked" id="st3"></span>
+                            <span class="fa fa-star unchecked" id="st4"></span>
+                            <span class="fa fa-star unchecked" id="st5"></span>
+                            <p><small>Louis vuitton</small> </p>
+        
+                        </div>
+                        <div><img class="imgowl"
+                                src="pictures/owl carousel/634131f6fbacbf800e0ebcb532e61f27-removebg-preview.png" alt="">
+                            <span class="fa fa-star checked" id="st6"></span>
+                            <span class="fa fa-star checked" id="st7"></span>
+                            <span class="fa fa-star checked" id="st8"></span>
+                            <span class="fa fa-star unchecked" id="st9"></span>
+                            <span class="fa fa-star unchecked" id="st10"></span>
+                            <p><small>Gucci</small> </p>
+                        </div>
+                        <div>
+                            <img class="imgowl" src="pictures/owl carousel/burberry-removebg-preview.png" alt="">
+                            <span class="fa fa-star checked" id="st6"></span>
+                            <span class="fa fa-star checked" id="st7"></span>
+                            <span class="fa fa-star checked" id="st8"></span>
+                            <span class="fa fa-star unchecked" id="st9"></span>
+                            <span class="fa fa-star unchecked" id="st10"></span>
+                            <p><small>Coach</small> </p>
+        
+                        </div>
+                        <div>
+                            <img class="imgowl" src="pictures/owl carousel/dior-removebg-preview.png" alt="">
+                            <span class="fa fa-star checked" id="st6"></span>
+                            <span class="fa fa-star checked" id="st7"></span>
+                            <span class="fa fa-star checked" id="st8"></span>
+                            <span class="fa fa-star unchecked" id="st9"></span>
+                            <span class="fa fa-star unchecked" id="st10"></span>
+                            <p><small>Coach</small> </p>
+        
+                        </div>
+                        <div> <img class="imgowl" src="pictures/owl carousel/wallets 1.jpg" alt="">
+                            <span class="fa fa-star checked" id="st6"></span>
+                            <span class="fa fa-star checked" id="st7"></span>
+                            <span class="fa fa-star checked" id="st8"></span>
+                            <span class="fa fa-star unchecked" id="st9"></span>
+                            <span class="fa fa-star unchecked" id="st10"></span>
+                            <p><small>Louis vuitton</small>
+                        </div>
+                        <div> <img class="imgowl" src="pictures/owl carousel/wallets_2-removebg-preview.png" alt="">
+                            <span class="fa fa-star checked" id="st6"></span>
+                            <span class="fa fa-star checked" id="st7"></span>
+                            <span class="fa fa-star checked" id="st8"></span>
+                            <span class="fa fa-star unchecked" id="st9"></span>
+                            <span class="fa fa-star unchecked" id="st10"></span>
+                            <p><small>Gucci</small>
+                        </div>
+                        <div>
+                            <img class="imgowl" src="pictures/owl carousel/prada_wallet-removebg-preview.png" alt="">
+                            <span class="fa fa-star checked" id="st6"></span>
+                            <span class="fa fa-star checked" id="st7"></span>
+                            <span class="fa fa-star checked" id="st8"></span>
+                            <span class="fa fa-star unchecked" id="st9"></span>
+                            <span class="fa fa-star unchecked" id="st10"></span>
+                            <p><small>Louis vuitton</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="owl-carousel owl-theme">
+                        <div class="card_OC">
+                            <img class="imgowl"
+                                src="pictures/owl carousel/louis-vuitton-weekend-tote-pm-monogram-macassar-canvas-bags--M45734_PM2_Front view.webp"
+                                alt="">
+                            <span class="fa fa-star checked" id="st1"></span>
+                            <span class="fa fa-star checked" id="st2"></span>
+                            <span class="fa fa-star checked" id="st3"></span>
+                            <span class="fa fa-star unchecked" id="st4"></span>
+                            <span class="fa fa-star unchecked" id="st5"></span>
+                            <p><small>Louis vuitton</small> </p>
+        
+                        </div>
+                        <div><img class="imgowl"
+                                src="pictures/owl carousel/634131f6fbacbf800e0ebcb532e61f27-removebg-preview.png" alt="">
+                            <span class="fa fa-star checked" id="st6"></span>
+                            <span class="fa fa-star checked" id="st7"></span>
+                            <span class="fa fa-star checked" id="st8"></span>
+                            <span class="fa fa-star unchecked" id="st9"></span>
+                            <span class="fa fa-star unchecked" id="st10"></span>
+                            <p><small>Gucci</small> </p>
+                        </div>
+                        <div>
+                            <img class="imgowl" src="pictures/owl carousel/burberry-removebg-preview.png" alt="">
+                            <span class="fa fa-star checked" id="st6"></span>
+                            <span class="fa fa-star checked" id="st7"></span>
+                            <span class="fa fa-star checked" id="st8"></span>
+                            <span class="fa fa-star unchecked" id="st9"></span>
+                            <span class="fa fa-star unchecked" id="st10"></span>
+                            <p><small>Coach</small> </p>
+        
+                        </div>
+                        <div>
+                            <img class="imgowl" src="pictures/owl carousel/dior-removebg-preview.png" alt="">
+                            <span class="fa fa-star checked" id="st6"></span>
+                            <span class="fa fa-star checked" id="st7"></span>
+                            <span class="fa fa-star checked" id="st8"></span>
+                            <span class="fa fa-star unchecked" id="st9"></span>
+                            <span class="fa fa-star unchecked" id="st10"></span>
+                            <p><small>Coach</small> </p>
+        
+                        </div>
+                        <div> <img class="imgowl" src="pictures/owl carousel/wallets 1.jpg" alt="">
+                            <span class="fa fa-star checked" id="st6"></span>
+                            <span class="fa fa-star checked" id="st7"></span>
+                            <span class="fa fa-star checked" id="st8"></span>
+                            <span class="fa fa-star unchecked" id="st9"></span>
+                            <span class="fa fa-star unchecked" id="st10"></span>
+                            <p><small>Louis vuitton</small>
+                        </div>
+                        <div> <img class="imgowl" src="pictures/owl carousel/wallets_2-removebg-preview.png" alt="">
+                            <span class="fa fa-star checked" id="st6"></span>
+                            <span class="fa fa-star checked" id="st7"></span>
+                            <span class="fa fa-star checked" id="st8"></span>
+                            <span class="fa fa-star unchecked" id="st9"></span>
+                            <span class="fa fa-star unchecked" id="st10"></span>
+                            <p><small>Gucci</small>
+                        </div>
+                        <div>
+                            <img class="imgowl" src="pictures/owl carousel/prada_wallet-removebg-preview.png" alt="">
+                            <span class="fa fa-star checked" id="st6"></span>
+                            <span class="fa fa-star checked" id="st7"></span>
+                            <span class="fa fa-star checked" id="st8"></span>
+                            <span class="fa fa-star unchecked" id="st9"></span>
+                            <span class="fa fa-star unchecked" id="st10"></span>
+                            <p><small>Louis vuitton</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <br>
+    <br>
+   
     <br>
     <br>
     <div class="container divsupport">
