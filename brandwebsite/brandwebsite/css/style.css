@@ -11,7 +11,7 @@
 }
 
 .div1 {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 
 .img1 {
@@ -24,7 +24,7 @@
 
 .btn1 {
     background-color: sienna;
-    border-radius: 10px;
+    border-radius: 0px;
     color: azure;
     margin-bottom: 10px;
 }
@@ -65,4 +65,98 @@
 
 .unchecked {
     color: grey;
+}
+/* cards css */
+
+.subbanners .one-third {
+    position: relative;
+   
+    /* float: left; */
+    padding: 0 15px;
+    overflow: hidden;
+}
+.subbanners .one-third .subbanner {
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+}
+@media (max-width: 1459px) and (min-width: 1200px){
+.subbanners .one-third .subbanner .subbanner-detail {
+    left: 15px;
+    top: 22%;
+}
+}
+@media (max-width: 1659px){
+#czsubbannercmsblock .subbanners .one-third .subbanner .subbanner-detail {
+    left: 20px;
+    top: 28%;
+}
+}
+.subbanners .one-third .subbanner .subbanner-detail {
+    position: absolute;
+    left: 32px;
+    text-align: left;
+    top: 35%;
+}
+.subbanners .subbanner:hover img {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.bgImgFixed{
+    background-image: linear-gradient(178deg,#a0522dab,#0000007d),url(../pictures/carousel/slider1.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+/* heading */
+.box-heading {
+    border: medium none;
+    width: auto;
+    margin: 0 0 20px 0;
+    padding: 0 0px 20px 0;
+    color: #000000;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: capitalize;
+    letter-spacing: 0.2px;
+}
+.box-heading:before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    margin: 0 auto;
+    background: #af6d53;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #a0522d !important;
+    text-decoration: line-through !important;
+    background: none !important;
+}
+.navLink{
+    color: black !important;
+
 }
