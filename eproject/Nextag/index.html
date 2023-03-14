@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>brand website</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" > -->
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -54,6 +56,19 @@
         object{
             width: 100%;
         }
+        .banner1{
+            width: 100%;
+            color:black;
+            font-size:larger;
+            font-weight: bolder;
+        }
+        .banner2{
+            width: 100%;
+            height:515px;
+            color:black;
+            font-size:larger;
+            font-weight: bolder;
+        }
        
     </style>
 </head>
@@ -81,53 +96,47 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light  bg-light sticky-top  p-3 shadow-sm customNavbar">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#"><i class="fa-solid fa-shop me-2"></i> <strong>NEXTAG</strong></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-    
-    
-            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-    
-    
-                <ul class="navbar-nav ms-auto ">
-                   
-                    <li class="nav-item">
-                        <a class="nav-link mx-2 text-uppercase active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2 text-uppercase" href="#">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2 text-uppercase" href="#">Catalog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2 text-uppercase" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2 text-uppercase" href="aboutus.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2 text-uppercase" href="contactus.html">Contact US</a>
-                    </li>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
-                <ul class="navbar-nav ms-auto ">
-                    <li class="nav-item">
-                        <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-cart-shopping me-1"></i>
-                            Cart</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-circle-user me-1"></i>
-                            Account</a>
-                    </li>
-                </ul>
-            </div>
+              </li>
+            </ul>
+            <ul class="navbar-nav my-2 my-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-cart-shopping me-1"></i>
+                        Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-circle-user me-1"></i>
+                        Account</a>
+                </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 <!-- navbar -->
 
 
@@ -205,17 +214,17 @@
         <br>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-6">
                     <div class=" CustomCard">
                         <div class="subbanners">
                             <div class="one-third subbanner-part1">
                                 <div class="subbanner-inner">
-                                    <div class="subbanner subbanner1"><a href="#" class="banner-anchor"><img
-                                                src="img/sub-banner-3.jpg" alt="sub-banner1"
+                                    <div class="subbanner subbanner1"><a href="#" class="banner-anchor"><img class="banner1"
+                                                src="img/slider 1.jpg" alt="sub-banner1"
                                                 class="subbanner-image1"></a>
                                         <div class="subbanner-detail">
-                                            <div class="offer-title">Flat 30% Discount</div>
-                                            <div class="main-title mb-4">Men &amp; Women Jackets</div>
+                                            <div class="offer-title banner1">Flat 30% Discount </div>
+                                            <div class="main-title mb-4 banner1">Men &amp;Women Handbags</div>
                                             <div class="shopnow"><a class="btn btn1" href="#">View More</a></div>
                                         </div>
                                     </div>
@@ -227,19 +236,19 @@
                 </div>
                 
               
-                <div class="col-lg-4">
+                <div class="col-lg-6">
                     <div class=" CustomCard">
                         <div class="subbanners">
                     
                           
                             <div class="one-third subbanner-part3">
                                 <div class="subbanner-inner">
-                                    <div class="subbanner subbanner3"><a href="#" class="banner-anchor"><img
-                                                src="img/sub-banner-1.jpg" alt="sub-banner3"
+                                    <div class="subbanner subbanner3"><a href="#" class="banner-anchor"><img class="banner2"
+                                                src="img/slider 2.webp" alt="sub-banner3"
                                                 class="subbanner-image3"></a>
-                                        <div class="subbanner-detail">
-                                            <div class="offer-title">40% Discount</div>
-                                            <div class="main-title mb-4">Girls Clothes Collection</div>
+                                        <div class="subbanner-detail banner2">
+                                            <div class="offer-title">40% Discount </div>
+                                            <div class="main-title mb-4 ">Men & WOMEN Wallets</div>
                                             <div class="shopnow"><a class="btn btn1" href="#">View More</a></div>
                                         </div>
                                     </div>
@@ -248,7 +257,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <!-- <div class="col-lg-4">
                     <div class=" CustomCard">
                         <div class="subbanners">
                             <div class="one-third subbanner-part1">
@@ -267,7 +276,7 @@
                           
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <br>
@@ -346,23 +355,23 @@
         </div>
         <br>
         <div class="container-fluid bgImgFixed">
-            <h1>
-                Louis Vuitton
-Handbags By Louis Vuitton For Women.
+            <h1 style="color: black;">
+                <!-- Louis Vuitton -->
+HANDBAGS  FOR WOMEN.
 <!-- <img src="img/carousel/sliderimg2.jpg" alt=""> -->
 
             </h1>
 
         </div>
         <br>
-        <div class="row">
+        <!-- <div class="row">
             <div class="col sm-12 mb-lg-12   text-center" style=" justify-content: center;align-items: center;">
                 <h4 style="display: flex; justify-content: center;">Flat 30% Discount</h4>
                 <h1 style="display: flex; justify-content: center;">Men & Women Handbags.</h1>
                 <button class="btn btn1" type="button">View
                     More</button>
             </div>
-        </div>
+        </div> -->
     </div>
     </div>
     <br>
