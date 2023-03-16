@@ -98,7 +98,7 @@
         </ul>
         <ul class="navbar-nav ms-auto my-2 my-lg-0 ">
           <li class="nav-item">
-            <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-cart-shopping me-1"></i>
+            <a class="nav-link mx-2 text-uppercase" href="shippinglist.html"><i class="fa-solid fa-cart-shopping me-1"></i>
 
               <button type="button" class="btnCartNav position-relative">
                 CART
@@ -828,6 +828,8 @@
         SelectedProduct.push(item);
         var totalCart = SelectedProduct.length;
         localStorage.setItem("cart", totalCart);
+        // localStorage.setItem("OrderDetail", SelectedProduct);
+
       }
 
       console.log(SelectedProduct);
