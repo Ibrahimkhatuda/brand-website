@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <style>
@@ -31,6 +32,7 @@
 
     .img1 {
       width: 100%;
+      height: auto !important;
     }
 
     .btn1 {
@@ -45,30 +47,30 @@
 <body>
   <div class="superNav border-bottom py-2 bg-light">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile">
-                <select class="me-3 border-0 bg-light">
-                    <option value="en-us">EN-US</option>
-                </select>
-                <span
-                    class="d-none d-lg-inline-block d-md-inline-block d-sm-inline-block d-xs-none me-3"><strong>info@somedomain.com</strong></span>
-                <span class="me-3"><i class="fa-solid fa-phone me-1 text-warning"></i>
-                    <strong>1-800-123-1234</strong></span>
-            </div>
-            <div
-                class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-none d-lg-block d-md-block-d-sm-block d-xs-none text-end">
-                <span class="me-3"><i class="fa-solid fa-truck text-muted me-1"></i><a class="text-muted"
-                        href="#">Shipping</a></span>
-                <span class="me-3"><i class="fa-solid fa-file  text-muted me-2"></i><a class="text-muted"
-                        href="#">Policy</a></span>
-            </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile">
+          <select class="me-3 border-0 bg-light">
+            <option value="en-us">EN-US</option>
+          </select>
+          <span
+            class="d-none d-lg-inline-block d-md-inline-block d-sm-inline-block d-xs-none me-3"><strong>info@somedomain.com</strong></span>
+          <span class="me-3"><i class="fa-solid fa-phone me-1 text-warning"></i>
+            <strong>1-800-123-1234</strong></span>
         </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-none d-lg-block d-md-block-d-sm-block d-xs-none text-end">
+          <span class="me-3"><i class="fa-solid fa-truck text-muted me-1"></i><a class="text-muted"
+              href="#">Shipping</a></span>
+          <span class="me-3"><i class="fa-solid fa-file  text-muted me-2"></i><a class="text-muted"
+              href="#">Policy</a></span>
+        </div>
+      </div>
     </div>
-</div>
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+  </div>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><i class="fa-solid fa-shop me-2"></i> <strong>NEXTAG</strong></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-shop me-2"></i> <strong>NEXTAG</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -83,7 +85,8 @@
             <a class="nav-link" href="aboutus.html">About Us</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Brands
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -94,33 +97,89 @@
           </li>
         </ul>
         <ul class="navbar-nav ms-auto my-2 my-lg-0 ">
-            <li class="nav-item">
-                <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-cart-shopping me-1"></i>
-                    Cart</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-circle-user me-1"></i>
-                    Account</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-cart-shopping me-1"></i>
+
+              <button type="button" class="btnCartNav position-relative">
+                CART
+                <span id="ID_Cart"
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
+
+                </span>
+              </button>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-circle-user me-1"></i>
+              Account</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="container">
-    <div class="container-fluid">
-      <div class="row">
-        <div class=" col-sm-12 col-lg-12 col-md-12 mb-lg-12 text-center h1">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class=" col-sm-12 col-lg-12 col-md-12 mb-lg-12 text-center h1">
 
-          <H1>GUCCI HANDBAGS</H1>
-          <h2>Women Collection </h2>
+            <H1>GUCCI HANDBAGS</H1>
+            <h2>Women Collection </h2>
+          </div>
         </div>
       </div>
     </div>
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link navLink active" id="pills-home-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-men-wallet" type="button" role="tab" aria-controls="pills-home"
+          aria-selected="true">Mens wallet Collection</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link navLink " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-men-handbag"
+          type="button" role="tab" aria-controls="pills-home" aria-selected="true">Mens handbags Collection</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link navLink" id="pills-profile-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-women-handbag" type="button" role="tab" aria-controls="pills-profile"
+          aria-selected="false">Womens handbags Collection</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link navLink" id="pills-profile-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-women-wallet" type="button" role="tab" aria-controls="pills-profile"
+          aria-selected="false">Womens wallet Collection</button>
+      </li>
+
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-men-wallet" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div id="ID_MensWallet" class="row"></div>
+
+      </div>
+      <div class="tab-pane fade" id="pills-women-handbag" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div id="ID_ProductCard" class="row"></div>
+      </div>
+      <div class="tab-pane fade" id="pills-women-wallet" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div id="ID_MensWallet" class="row"></div>
+
+      </div>
+      <div class="tab-pane fade" id="pills-men-handbag" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div id="ID_MenHandBags" class="row"></div>
+      </div>
+    </div>
+
+
+
+
+
   </div>
 
 
 
-  <div id="ID_ProductCard" class="row"></div>
+
   <!-- commented by miss aleena  -->
   <!-- <div class="container">
     <div class="container-fluid">
@@ -501,7 +560,7 @@
   </div>
 
   <script>
-    var productItem = [{
+    var WomenHanBags = [{
       id: 101,
       productName: "Ophidia medium tote bag",
       price: "2,250",
@@ -509,47 +568,256 @@
     },
     {
       id: 102,
-      productName: "EXP Portable Hard Drive",
+      productName: "Ophidia medium tote bag Black Leather",
       price: "800.00",
-      photo: "img/grid1/handbag17-removebg-preview.png"
+      photo: "img/grid1/handbag2-removebg-preview.png"
     },
     {
       id: 103,
-      productName: "Luxury Ultra thin Wrist Watch",
+      productName: "Ophidia medium tote bag Beige and ebony",
       price: "500.00",
-      photo: "img/grid1/handbag1-removebg-preview.png"
+      photo: "img/grid1/hand_bag3-removebg-preview.png"
     },
     {
       id: 104,
-      productName: "XP 1155 Intel Core Laptop",
+      productName: "Ophidia medium tote bag Brown Leather",
       price: "1000.00",
-      photo: "img/grid1/handbag17-removebg-preview.png"
+      photo: "img/grid1/HANDBAG4-removebg-preview.png"
+    },
+    {
+      id: 105,
+      productName: "Ophidia medium tote bag Green Leather",
+      price: "1000.00",
+      photo: "img/grid1/handbag5-removebg-preview.png"
+    },
+    {
+      id: 106,
+      productName: "Gucci Blondie shoulder bag White Leather",
+      price: "1000.00",
+      photo: "img/grid1/clucth-removebg-preview.png"
+    },
+    {
+      id: 107,
+      productName: "Gucci Blondie top-handle bag White Leather",
+      price: "1000.00",
+      photo: "img/grid1/handbag_6-removebg-preview.png"
+    },
+    {
+      id: 108,
+      productName: " Gucci Blondie shoulder bag Light Pink Leather",
+      price: "1000.00",
+      photo: "img/grid1/handbag7-removebg-preview.png"
+    },
+    {
+      id: 109,
+      productName: "  Gucci Blondie top-handle bag Light Pink Leather",
+      price: "1000.00",
+      photo: "img/grid1/handbag_8-removebg-preview.png"
+    },
+    {
+      id: 110,
+      productName: "Gucci Blondie shoulder bag Black Leather",
+      price: "1000.00",
+      photo: "img/grid1/handbag-9__1_-removebg-preview.png"
+    }
+    ];
+
+    var MenWallet = [{
+      id: 111,
+      productName: "Ophidia GG wallet Grey and black Leather",
+      price: "2,250",
+      photo: "img/men wallet/wallet_1-removebg-preview.png"
+    },
+    {
+      id: 112,
+      productName: "Jumbo GG wallet Orange Leather",
+      price: "800.00",
+      photo: "img/men wallet/wallet_2-removebg-preview.png"
+    },
+    {
+      id: 113,
+      productName: "Ophidia medium tote bag Beige and ebony",
+      price: "500.00",
+      photo: "img/men wallet/wallet_3-removebg-preview.png"
+    },
+    {
+      id: 114,
+      productName: "Wallet with cut-out Interlocking G Black Leather with Beige",
+      price: "1000.00",
+      photo: "img/men wallet/wallet_4-removebg-preview.png"
+    },
+    {
+      id: 115,
+      productName: "Ophidia medium tote bag Green Leather",
+      price: "1000.00",
+      photo: "img/men wallet/wallet_5-removebg-preview.png"
+    },
+    {
+      id: 116,
+      productName: "mini wallet Beige with brown leather trim",
+      price: "1000.00",
+      photo: "img/men wallet/wallet_5-removebg-preview.png"
+    },
+    {
+      id: 117,
+      productName: "Beige with Blue Leather Trim",
+      price: "1000.00",
+      photo: "img/men wallet/wallet_6-removebg-preview.png"
+    },
+    {
+      id: 118,
+      productName: "Blue GG embossed leather",
+      price: "1000.00",
+      photo: "img/men wallet/wallet_7-removebg-preview.png"
+    },
+    {
+      id: 119,
+      productName: "Taupe jumbo GG leather",
+      price: "1000.00",
+      photo: "img/men wallet/wallet_9-removebg-preview.png"
+    },
+    {
+      id: 120,
+      productName: "GG embossed zip around wallet Black leather",
+      price: "1000.00",
+      photo: "img/men wallet/wallet_10-removebg-preview.png"
+    }
+    ];
+
+    var guccimenhandbags = [{
+      id: 121,
+      productName: " Small duffle bag with tonal Double G",
+      price: " $ 2,800",
+      photo: "img/men handbags/handbag1-removebg-preview.png"
+    },
+    {
+      id: 122,
+      productName: " Small duffle bag with tonal Double G",
+      price: "$ 2,800",
+      photo: "img/men handbags/handbag2-removebg-preview.png"
+    },
+    {
+      id: 123,
+      productName: " GG embossed mini duffle bag",
+      price: "$ 2,500",
+      photo: "img/men handbags/handbag3-removebg-preview.png"
+    },
+    {
+      id: 124,
+      productName: " Gucci Horsebit 1955 shoulder bag",
+      price: "$ 4,250",
+      photo: "img/men handbags/handbag8-removebg-preview.png"
+    },
+    {
+      id: 125,
+      productName: "GG Messenger bag",
+      price: "$ 1,600",
+      photo: "img/men handbags/hand_bag6-removebg-preview.png"
+    },
+    {
+      id: 126,
+      productName: "Shoulder bag with Interlocking G",
+      price: "$ 1,450",
+      photo: "img/men handbags/handbag7-removebg-preview.png"
+    },
+    {
+      id: 127,
+      productName: "GG Messenger bag",
+      price: "$1600",
+      photo: "img/men handbags/hand_bag6-removebg-preview.png"
+    },
+    {
+      id: 128,
+      productName: "Jumbo GG large duffle bag",
+      price: " $ 3,980",
+      photo: "img/men handbags/handbag9-removebg-preview.png"
+    },
+    {
+      id: 129,
+      productName: "Jumbo GG large duffle bag",
+      price: "$3,100",
+      photo: "img/men handbags/HANDBAG12-removebg-preview.png"
+    },
+    {
+      id: 130,
+      productName: " Small duffle bag with tonal Double G",
+      price: " $ 2,800",
+      photo: "img/men handbags/handbag1-removebg-preview.png"
     }];
-    ShowProduct(productItem);
+
+
+
+
+
+    ShowProduct(WomenHanBags);
+    ShowMensWallet(MenWallet);
+    ShowMensHandBags(guccimenhandbags)
     function ShowProduct(product) {
       var productHTML = "";
 
 
 
-      for (let i = 0; i < productItem.length; i++) {
-        var element = productItem[i];
+      for (let i = 0; i < WomenHanBags.length; i++) {
+        var element = WomenHanBags[i];
         productHTML += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
           '<div class="div1 text-center"> ' +
-          ' <img class="img1" src="' + productItem[i].photo + '" alt=""> ' +
+          ' <img class="img1" src="' + WomenHanBags[i].photo + '" alt=""> ' +
 
-          '<p class="text-center"> ' + productItem[i].productName + ' <br> ' +
-          ' <img src="" alt=""> white Leather<br> $ ' + productItem[i].price + ' <br> ' +
-          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + productItem[i].id + ')">Add To Cart </button> </p> </div> </div>';
+          '<p class="text-center"> ' + WomenHanBags[i].productName + ' <br> ' +
+          ' <img src="" alt=""> white Leather<br> $ ' + WomenHanBags[i].price + ' <br> ' +
+          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + WomenHanBags[i].id + ')">Add To Cart </button> </p> </div> </div>';
       }
       document.getElementById("ID_ProductCard").innerHTML = productHTML;
 
 
     }
+    function ShowMensWallet(product) {
+      var mensWalletHTML = "";
+
+
+
+      for (let i = 0; i < MenWallet.length; i++) {
+        var element = MenWallet[i];
+        mensWalletHTML += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
+          '<div class="div1 text-center"> ' +
+          ' <img class="img1" src="' + MenWallet[i].photo + '" alt=""> ' +
+
+          '<p class="text-center"> ' + MenWallet[i].productName + ' <br> ' +
+          ' <img src="" alt=""> white Leather<br> $ ' + MenWallet[i].price + ' <br> ' +
+          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + MenWallet[i].id + ')">Add To Cart </button> </p> </div> </div>';
+      }
+      document.getElementById("ID_MensWallet").innerHTML = mensWalletHTML;
+
+
+    }
+
+    function ShowMensHandBags(product) {
+      var mensHandBags = "";
+
+
+
+      for (let i = 0; i < guccimenhandbags.length; i++) {
+        var element = guccimenhandbags[i];
+        mensHandBags += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
+          '<div class="div1 text-center"> ' +
+          ' <img class="img1" src="' + guccimenhandbags[i].photo + '" alt=""> ' +
+
+          '<p class="text-center"> ' + guccimenhandbags[i].productName + ' <br> ' +
+          ' <img src="" alt=""> white Leather<br> $ ' + guccimenhandbags[i].price + ' <br> ' +
+          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + guccimenhandbags[i].id + ')">Add To Cart </button> </p> </div> </div>';
+      }
+      document.getElementById("ID_MenHandBags").innerHTML = mensHandBags;
+
+
+    }
+
+
+
     var SelectedProduct = [];
     function btnAddToCart(param) {
 
 
-      var item = productItem.find(item => item.id === param);
+      var item = WomenHanBags.find(item => item.id === param);
       var findID = SelectedProduct.some(x => x.id === param);
       debugger
       if (findID) {
@@ -571,12 +839,14 @@
     function GetCartLength() {
       var TotalCartLength = 0;
       TotalCartLength = localStorage.getItem("cart");
-      document.getElementById("ID_cart").innerHTML = TotalCartLength;
+      document.getElementById("ID_Cart").innerHTML = TotalCartLength;
     }
 
 
 
   </script>
+  <script src="js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
