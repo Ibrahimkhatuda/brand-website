@@ -29,12 +29,13 @@
     margin-bottom: 10px;
 }
 
-.divback {
-    background-image: url(img/background/newsletter-bkg.jpg);
+.DivSubscribe {
+    background-image: url(../img/background/newsletter-bkg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px;
+    background-attachment: fixed;
 }
 
 .divsupport {
@@ -159,4 +160,7 @@
 .navLink{
     color: black !important;
 
+}
+.nav-link{
+    text-transform: uppercase !important;
 }
