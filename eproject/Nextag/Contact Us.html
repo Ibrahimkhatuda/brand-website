@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Form</title>
+    <style>
+.required_validation{
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Contact Us
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-custom">
+                <div class="modal-content">
+                    <div class="modal-header modal-header-custom">
+                        <h5 class="modal-title " id="exampleModalLabel">Contact Us</h5>
+                        <button type="button" class="btn-close modal-cancel-custom" data-bs-dismiss="modal"
+                            aria-label="Close" onclick="btnclose()"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="">Email Address:</label><br>
+                        <input class="form-control" type="email" name="email" id="form_email" placeholder="Email"
+                            autocomplete="on">
+                        <span class="required_validation" id="validation1">*write your email*</span>
+                        <span class="email_expression" id="email_expression_id">*write correct email*</span>
+                        <span class="email_security">we will never share your email with anyone else</span><br>
+                        <label for="">Password:</label><br>
+                        <input class="form-control" type="password" name="password" id="form_password"
+                            placeholder="Password">
+                        <span class="required_validation" id="validation2">*type your password*</span> <br>
+                        <label for="">Message:</label><br>
+                        <textarea class="form-control" name="textarea" id="form_feedback" cols="70" rows="7"
+                            placeholder="Write Your Message"></textarea>
+                        <span class="required_validation" id="validation3">*write your Message</span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancel</button>
+                        <button type="button" class="btn btn-primary" onclick="btnsend()">send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        function btnsend() {
+            var email_input = document.getElementById("form_email").value
+            var password_input = document.getElementById("form_password").value
+            var feedback_input = document.getElementById("form_feedback").value
+            var email_input_format = /^[A-z._]{3,}[0-9]{0,}@[A-z]{4,8}.[A-z]{2,4}$/;
+            var check_email_format = email_input_format.test(email_input);
+
+
+            if (email_input == "") {
+                document.getElementById("validation1").style.display = 'block'
+            }
+            else if (check_email_format == false) {
+                document.getElementById("email_expression_id").style.display = 'block'
+                document.getElementById("validation1").style.display = 'none'
+
+            }
+            // else if (check_email_format == true) {
+            //     document.getElementById("email_expression_id").style.display = 'none'
+            // }
+            else if (password_input == "") {
+
+                document.getElementById("validation2").style.display = 'block'
+                document.getElementById("validation1").style.display = 'none'
+                document.getElementById("email_expression_id").style.display = 'none'
+            }
+            else if (feedback_input == "") {
+                document.getElementById("validation3").style.display = 'block'
+                document.getElementById("validation2").style.display = 'none'
+            }
+
+            else {
+                document.getElementById("email_expression_id").style.display = 'none'
+                document.getElementById("validation1").style.display = 'none'
+                document.getElementById("validation2").style.display = 'none'
+                document.getElementById("validation3").style.display = 'none'
+                alert("sent successfully")
+            }
+        }
+        function btnclose() {
+            var email_input = document.getElementById("form_email").value
+            var password_input = document.getElementById("form_password").value
+            var feedback_input = document.getElementById("form_feedback").value
+
+            document.getElementById("validation1").style.display = 'none'
+            document.getElementById("validation2").style.display = 'none'
+            document.getElementById("validation3").style.display = 'none'
+            document.getElementById("email_expression_id").style.display = 'none'
+            document.getElementById("form_email").value = ""
+            document.getElementById("form_password").value = ""
+            document.getElementById("form_feedback").value = ""
+
+
+        }
+
+    </script>
+</body>
+</html>
