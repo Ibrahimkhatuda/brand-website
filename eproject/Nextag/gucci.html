@@ -96,8 +96,16 @@
         </ul>
         <ul class="navbar-nav my-2 my-lg-0 ">
           <li class="nav-item">
-            <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-cart-shopping me-1"></i>
-              Cart</a>
+            <a class="nav-link mx-2 text-uppercase" href="#">
+
+              <button class=" position-relative">
+                Cart
+                <span id="ID_cart"
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                </span>
+              </button>
+            </a>
+
           </li>
           <li class="nav-item">
             <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-circle-user me-1"></i>
@@ -500,25 +508,25 @@
 
   <script>
     var productItem = [{
-      id : 101,
+      id: 101,
       productName: "Ophidia medium tote bag",
       price: "2,250",
       photo: "img/grid1/handbag1-removebg-preview.png"
     },
     {
-      id : 102,
+      id: 102,
       productName: "EXP Portable Hard Drive",
       price: "800.00",
       photo: "img/grid1/handbag17-removebg-preview.png"
     },
     {
-      id : 103,
+      id: 103,
       productName: "Luxury Ultra thin Wrist Watch",
       price: "500.00",
       photo: "img/grid1/handbag1-removebg-preview.png"
     },
     {
-      id : 104,
+      id: 104,
       productName: "XP 1155 Intel Core Laptop",
       price: "1000.00",
       photo: "img/grid1/handbag17-removebg-preview.png"
@@ -543,13 +551,33 @@
 
 
     }
-    var SelectedProduct =[];
+    var SelectedProduct = [];
     function btnAddToCart(param) {
-      var item = productItem.find(item => item.id === param);
-      SelectedProduct.push(item)
-      console.log(SelectedProduct.length);
 
-      
+
+      var item = productItem.find(item => item.id === param);
+      var findID = SelectedProduct.some(x => x.id === param);
+      debugger
+      if (findID) {
+        alert("product already added");
+      }
+      else {
+
+        SelectedProduct.push(item);
+        var totalCart = SelectedProduct.length;
+        localStorage.setItem("cart", totalCart);
+      }
+
+      console.log(SelectedProduct);
+      GetCartLength();
+
+
+    }
+    GetCartLength();
+    function GetCartLength() {
+      var TotalCartLength = 0;
+      TotalCartLength = localStorage.getItem("cart");
+      document.getElementById("ID_cart").innerHTML = TotalCartLength;
     }
 
 
