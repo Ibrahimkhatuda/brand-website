@@ -560,7 +560,7 @@
   </div>
 
   <script>
-    var WomenHanBags = [{
+    var ProductsList = [{
       id: 101,
       productName: "Ophidia medium tote bag",
       price: "2,250",
@@ -619,10 +619,8 @@
       productName: "Gucci Blondie shoulder bag Black Leather",
       price: "1000.00",
       photo: "img/grid1/handbag-9__1_-removebg-preview.png"
-    }
-    ];
-
-    var MenWallet = [{
+    },
+    {
       id: 111,
       productName: "Ophidia GG wallet Grey and black Leather",
       price: "2,250",
@@ -681,10 +679,8 @@
       productName: "GG embossed zip around wallet Black leather",
       price: "1000.00",
       photo: "img/men wallet/wallet_10-removebg-preview.png"
-    }
-    ];
-
-    var guccimenhandbags = [{
+    },
+    {
       id: 121,
       productName: " Small duffle bag with tonal Double G",
       price: " $ 2,800",
@@ -743,29 +739,35 @@
       productName: " Small duffle bag with tonal Double G",
       price: " $ 2,800",
       photo: "img/men handbags/handbag1-removebg-preview.png"
-    }];
+    }
+    ];
+
+   
+
+   
 
 
 
 
 
-    ShowProduct(WomenHanBags);
-    ShowMensWallet(MenWallet);
-    ShowMensHandBags(guccimenhandbags)
+    ShowProduct(ProductsList);
+    ShowMensWallet(ProductsList);
+    ShowMensHandBags(ProductsList)
+
     function ShowProduct(product) {
       var productHTML = "";
 
 
 
-      for (let i = 0; i < WomenHanBags.length; i++) {
-        var element = WomenHanBags[i];
+      for (let i = 0; i < ProductsList.length; i++) {
+        var element = ProductsList[i];
         productHTML += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
           '<div class="div1 text-center"> ' +
-          ' <img class="img1" src="' + WomenHanBags[i].photo + '" alt=""> ' +
+          ' <img class="img1" src="' + ProductsList[i].photo + '" alt=""> ' +
 
-          '<p class="text-center"> ' + WomenHanBags[i].productName + ' <br> ' +
-          ' <img src="" alt=""> white Leather<br> $ ' + WomenHanBags[i].price + ' <br> ' +
-          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + WomenHanBags[i].id + ')">Add To Cart </button> </p> </div> </div>';
+          '<p class="text-center"> ' + ProductsList[i].productName + ' <br> ' +
+          ' <img src="" alt=""> white Leather<br> $ ' + ProductsList[i].price + ' <br> ' +
+          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + ProductsList[i].id + ')">Add To Cart </button> </p> </div> </div>';
       }
       document.getElementById("ID_ProductCard").innerHTML = productHTML;
 
@@ -776,15 +778,15 @@
 
 
 
-      for (let i = 0; i < MenWallet.length; i++) {
-        var element = MenWallet[i];
+      for (let i = 0; i < ProductsList.length; i++) {
+        var element = ProductsList[i];
         mensWalletHTML += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
           '<div class="div1 text-center"> ' +
-          ' <img class="img1" src="' + MenWallet[i].photo + '" alt=""> ' +
+          ' <img class="img1" src="' + ProductsList[i].photo + '" alt=""> ' +
 
-          '<p class="text-center"> ' + MenWallet[i].productName + ' <br> ' +
-          ' <img src="" alt=""> white Leather<br> $ ' + MenWallet[i].price + ' <br> ' +
-          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + MenWallet[i].id + ')">Add To Cart </button> </p> </div> </div>';
+          '<p class="text-center"> ' + ProductsList[i].productName + ' <br> ' +
+          ' <img src="" alt=""> white Leather<br> $ ' + ProductsList[i].price + ' <br> ' +
+          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + ProductsList[i].id + ')">Add To Cart </button> </p> </div> </div>';
       }
       document.getElementById("ID_MensWallet").innerHTML = mensWalletHTML;
 
@@ -796,15 +798,15 @@
 
 
 
-      for (let i = 0; i < guccimenhandbags.length; i++) {
-        var element = guccimenhandbags[i];
+      for (let i = 0; i < ProductsList.length; i++) {
+        var element = ProductsList[i];
         mensHandBags += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
           '<div class="div1 text-center"> ' +
-          ' <img class="img1" src="' + guccimenhandbags[i].photo + '" alt=""> ' +
+          ' <img class="img1" src="' + ProductsList[i].photo + '" alt=""> ' +
 
-          '<p class="text-center"> ' + guccimenhandbags[i].productName + ' <br> ' +
-          ' <img src="" alt=""> white Leather<br> $ ' + guccimenhandbags[i].price + ' <br> ' +
-          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + guccimenhandbags[i].id + ')">Add To Cart </button> </p> </div> </div>';
+          '<p class="text-center"> ' + ProductsList[i].productName + ' <br> ' +
+          ' <img src="" alt=""> white Leather<br> $ ' + ProductsList[i].price + ' <br> ' +
+          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + ProductsList[i].id + ')">Add To Cart </button> </p> </div> </div>';
       }
       document.getElementById("ID_MenHandBags").innerHTML = mensHandBags;
 
@@ -817,7 +819,7 @@
     function btnAddToCart(param) {
 
 
-      var item = WomenHanBags.find(item => item.id === param);
+      var item = ProductsList.find(item => item.id === param);
       var findID = SelectedProduct.some(x => x.id === param);
       debugger
       if (findID) {
@@ -828,7 +830,7 @@
         SelectedProduct.push(item);
         var totalCart = SelectedProduct.length;
         localStorage.setItem("cart", totalCart);
-        // localStorage.setItem("OrderDetail", SelectedProduct);
+        localStorage.setItem("OrderDetail",JSON.stringify(SelectedProduct));
 
       }
 
