@@ -169,3 +169,15 @@
     color: white;
     border:none
 }
+.bgimg {
+    background: linear-gradient(181deg,#00000014,#000000a1), url(../img/louis.webp);
+      height: 500px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-attachment: fixed;
+      color: white;
+
+  }
