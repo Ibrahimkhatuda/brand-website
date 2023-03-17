@@ -297,8 +297,8 @@ function GetOrderDetailData(){
 
   for (var i = 0; i < GetData.length; i++) {
    var el = GetData[i];
-   ID_productName.innerHTML = GetData[i].productName;
-   ID_productPrice.innerHTML = GetData[i].price;
+   ID_productName.innerHTML += GetData[i].productName;
+   ID_productPrice.innerHTML += GetData[i].price;
 
     
   }
