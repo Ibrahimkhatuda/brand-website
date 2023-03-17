@@ -49,6 +49,20 @@
             /* height:px; */
             width: 100%;
         }
+        #namealert{
+            color: red;
+        }
+        #emailalert{
+            color: red;
+        }
+        #phonealert{
+            color: red;
+        }#contentalert{
+            color: red;
+        }
+        #emailcorrecterror{
+            color: red;
+        }
     </style>
 </head>
 
@@ -134,27 +148,32 @@
                         <label for="exampleInputEmail1" class="form-label">Name: </label>
                         
                         <br>
-                        <input class="input input1" type="email" class="form-control" id="exampleInputEmail1"
+                        <input class="input input1" type="text" class="form-control" id="exampleInputName"
                             aria-describedby="emailHelp">
                         <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                        <p id="namealert"></p>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Email:</label>
                         <br>
-                        <input class="input input1" type="password" class="form-control" id="exampleInputPassword1">
+                        <input class="input input1" type="emaiil" class="form-control" id="exampleInputEmail">
+                        <span id="emailalert"></span>
+                        <p id="emailcorrecterror"></p>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Phone no:</label>
                         <br>
-                        <input class="input input1" type="password" class="form-control" id="exampleInputPassword1">
+                        <input class="input input1" type="text" class="form-control" id="exampleInputPhone">
+                        <p id="phonealert"></p>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Content:</label>
                         <br>
-                        <input class="input input2" type="password" class="form-control" id="exampleInputPassword1">
+                        <input class="input input2" type="text" class="form-control" id="exampleInputContent">
+                        <p id="contentalert"></p>
                     </div>
                     <br>
-                    <button type="submit" class="btn btn1">Send Message:</button>
+                    <button type="button" class="btn btn1" onclick="btnsend()">Send Message:</button>
                 </form>
 
             </div>
@@ -288,6 +307,52 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        function btnsend(){
+            var name = document.getElementById("exampleInputName").value
+            var email = document.getElementById("exampleInputEmail").value
+            var phone = document.getElementById("exampleInputPhone").value
+            var content = document.getElementById("exampleInputContent").value
+            var emailformat = /^[A-z._]{3,}[0-9]{0,}@[A-z]{4,8}.[A-z]{2,4}$/;
+            var emailformatcheck = emailformat.test(email);
+            if (name == ""){
+                document.getElementById("namealert").innerHTML = "enter your name"
+            }
+            else if ( email == ""){
+                document.getElementById("emailalert").innerHTML = "enter your email"
+                document.getElementById("namealert").innerHTML = ""
+            }
+            else if(emailformatcheck == false){
+                document.getElementById("emailcorrecterror").innerHTML = "write correct email"
+                document.getElementById("emailalert").innerHTML = ""
+                document.getElementById("namealert").innerHTML = ""
+
+            }
+            else if ( phone == ""){
+                document.getElementById("phonealert").innerHTML = "enter your phone no."
+                document.getElementById("namealert").innerHTML = ""
+                document.getElementById("emailalert").innerHTML = ""
+                document.getElementById("emailcorrecterror").innerHTML = ""
+            }
+            else if ( content == ""){
+                document.getElementById("contentalert").innerHTML = "write content here"
+                document.getElementById("namealert").innerHTML = ""
+                document.getElementById("emailalert").innerHTML = ""
+                document.getElementById("phonealert").innerHTML = ""
+                document.getElementById("emailcorrecterror").innerHTML = ""
+            }
+            else{
+                document.getElementById("namealert").innerHTML = ""
+                document.getElementById("emailalert").innerHTML = ""
+                document.getElementById("phonealert").innerHTML = ""
+                document.getElementById("contentalert").innerHTML = ""
+                document.getElementById("emailcorrecterror").innerHTML = ""
+                alert("sent successfully")
+            }
+            
+        }
+    </script>
 </body>
 
 </html>
