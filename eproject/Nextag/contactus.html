@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <style>
         .bgimg {
             background: linear-gradient(45deg, #0000009c, #000000a6), url(img/louis.webp);
@@ -49,6 +50,20 @@
             /* height:px; */
             width: 100%;
         }
+        #namealert{
+            color: red;
+        }
+        #emailalert{
+            color: red;
+        }
+        #phonealert{
+            color: red;
+        }#contentalert{
+            color: red;
+        }
+        #emailcorrecterror{
+            color: red;
+        }
     </style>
 </head>
 
@@ -77,17 +92,18 @@
     </div>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="fa-solid fa-shop me-2"></i> <strong>NEXTAG</strong></a>
+            <!-- <a class="navbar-brand" href="#"><i class="fa-solid fa-shop me-2"></i> <strong>NEXTAG</strong></a> -->
+            <img class="logo"  src="img/logo/nextag-logos/nextag-logos_white.png" alt="">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link " aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contactus.html">Contact us</a>
+                <a class="nav-link active" href="contactus.html">Contact us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="aboutus.html">About Us</a>
@@ -97,6 +113,7 @@
                   Brands
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="allbrands.html">All brands </a></li>
                   <li><a class="dropdown-item" href="gucci.html">Gucci</a></li>
                   <li><a class="dropdown-item" href="LouisVuitton.html">Louis Vuitton </a></li>
                   <li><a class="dropdown-item" href="coach mens bags.html">Coach</a></li>
@@ -134,27 +151,32 @@
                         <label for="exampleInputEmail1" class="form-label">Name: </label>
                         
                         <br>
-                        <input class="input input1" type="email" class="form-control" id="exampleInputEmail1"
+                        <input class="input input1" type="text" class="form-control" id="exampleInputName"
                             aria-describedby="emailHelp">
                         <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                        <p id="namealert"></p>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Email:</label>
                         <br>
-                        <input class="input input1" type="password" class="form-control" id="exampleInputPassword1">
+                        <input class="input input1" type="emaiil" class="form-control" id="exampleInputEmail">
+                        <span id="emailalert"></span>
+                        <p id="emailcorrecterror"></p>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Phone no:</label>
                         <br>
-                        <input class="input input1" type="password" class="form-control" id="exampleInputPassword1">
+                        <input class="input input1" type="text" class="form-control" id="exampleInputPhone">
+                        <p id="phonealert"></p>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Content:</label>
                         <br>
-                        <input class="input input2" type="password" class="form-control" id="exampleInputPassword1">
+                        <input class="input input2" type="text" class="form-control" id="exampleInputContent">
+                        <p id="contentalert"></p>
                     </div>
                     <br>
-                    <button type="submit" class="btn btn1">Send Message:</button>
+                    <button type="button" class="btn btn1" onclick="btnsend()">Send Message:</button>
                 </form>
 
             </div>
@@ -288,6 +310,52 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        function btnsend(){
+            var name = document.getElementById("exampleInputName").value
+            var email = document.getElementById("exampleInputEmail").value
+            var phone = document.getElementById("exampleInputPhone").value
+            var content = document.getElementById("exampleInputContent").value
+            var emailformat = /^[A-z._]{3,}[0-9]{0,}@[A-z]{4,8}.[A-z]{2,4}$/;
+            var emailformatcheck = emailformat.test(email);
+            if (name == ""){
+                document.getElementById("namealert").innerHTML = "enter your name"
+            }
+            else if ( email == ""){
+                document.getElementById("emailalert").innerHTML = "enter your email"
+                document.getElementById("namealert").innerHTML = ""
+            }
+            else if(emailformatcheck == false){
+                document.getElementById("emailcorrecterror").innerHTML = "write correct email"
+                document.getElementById("emailalert").innerHTML = ""
+                document.getElementById("namealert").innerHTML = ""
+
+            }
+            else if ( phone == ""){
+                document.getElementById("phonealert").innerHTML = "enter your phone no."
+                document.getElementById("namealert").innerHTML = ""
+                document.getElementById("emailalert").innerHTML = ""
+                document.getElementById("emailcorrecterror").innerHTML = ""
+            }
+            else if ( content == ""){
+                document.getElementById("contentalert").innerHTML = "write content here"
+                document.getElementById("namealert").innerHTML = ""
+                document.getElementById("emailalert").innerHTML = ""
+                document.getElementById("phonealert").innerHTML = ""
+                document.getElementById("emailcorrecterror").innerHTML = ""
+            }
+            else{
+                document.getElementById("namealert").innerHTML = ""
+                document.getElementById("emailalert").innerHTML = ""
+                document.getElementById("phonealert").innerHTML = ""
+                document.getElementById("contentalert").innerHTML = ""
+                document.getElementById("emailcorrecterror").innerHTML = ""
+                alert("sent successfully")
+            }
+            
+        }
+    </script>
 </body>
 
 </html>
