@@ -620,7 +620,8 @@
       productName: "Gucci Blondie shoulder bag Black Leather",
       price: "1000.00",
       photo: "img/grid1/handbag-9__1_-removebg-preview.png"
-    },
+    }, ]
+    var menwallet=[
     {
       id: 111,
       productName: "Ophidia GG wallet Grey and black Leather",
@@ -681,6 +682,10 @@
       price: "1000.00",
       photo: "img/men wallet/wallet_10-removebg-preview.png"
     },
+  ]
+  var menhandbag =[
+
+  
     {
       id: 121,
       productName: " Small duffle bag with tonal Double G",
@@ -752,8 +757,8 @@
 
 
     ShowProduct(ProductsList);
-    ShowMensWallet(ProductsList);
-    ShowMensHandBags(ProductsList)
+    ShowMensWallet(menwallet);
+    ShowMensHandBags(menhandbag)
 
     function ShowProduct(product) {
       var productHTML = "";
@@ -779,15 +784,15 @@
 
 
 
-      for (let i = 0; i < ProductsList.length; i++) {
-        var element = ProductsList[i];
+      for (let i = 0; i < menwallet.length; i++) {
+        var element = menwallet[i];
         mensWalletHTML += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
           '<div class="div1 text-center"> ' +
-          ' <img class="img1" src="' + ProductsList[i].photo + '" alt=""> ' +
+          ' <img class="img1" src="' + menwallet[i].photo + '" alt=""> ' +
 
-          '<p class="text-center"> ' + ProductsList[i].productName + ' <br> ' +
-          ' <img src="" alt=""> white Leather<br> $ ' + ProductsList[i].price + ' <br> ' +
-          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + ProductsList[i].id + ')">Add To Cart </button> </p> </div> </div>';
+          '<p class="text-center"> ' + menwallet[i].productName + ' <br> ' +
+          ' <img src="" alt=""> white Leather<br> $ ' + menwallet[i].price + ' <br> ' +
+          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + menwallet[i].id + ')">Add To Cart </button> </p> </div> </div>';
       }
       document.getElementById("ID_MensWallet").innerHTML = mensWalletHTML;
 
@@ -799,15 +804,15 @@
 
 
 
-      for (let i = 0; i < ProductsList.length; i++) {
-        var element = ProductsList[i];
+      for (let i = 0; i < menhandbag.length; i++) {
+        var element = menhandbag[i];
         mensHandBags += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
           '<div class="div1 text-center"> ' +
-          ' <img class="img1" src="' + ProductsList[i].photo + '" alt=""> ' +
+          ' <img class="img1" src="' + menhandbag[i].photo + '" alt=""> ' +
 
-          '<p class="text-center"> ' + ProductsList[i].productName + ' <br> ' +
-          ' <img src="" alt=""> white Leather<br> $ ' + ProductsList[i].price + ' <br> ' +
-          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + ProductsList[i].id + ')">Add To Cart </button> </p> </div> </div>';
+          '<p class="text-center"> ' + menhandbag[i].productName + ' <br> ' +
+          ' <img src="" alt=""> white Leather<br> $ ' + menhandbag[i].price + ' <br> ' +
+          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + menhandbag[i].id + ')">Add To Cart </button> </p> </div> </div>';
       }
       document.getElementById("ID_MenHandBags").innerHTML = mensHandBags;
 

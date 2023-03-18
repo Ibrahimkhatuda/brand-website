@@ -1099,7 +1099,9 @@
                         productName: "Pocket Organiser",
                         price: "$1,310.00",
                         photo: "img/Mens Wallets Pictures/Multiple_Wallet2-removebg-preview.png"
-                    } ,{
+                    } ]
+                    var ladiesbag =[{
+                        // ladies handbag
                         id: 11,
                         productName: "Dauphine MM Bag",
                         price: " $2,710.00",
@@ -1158,7 +1160,9 @@
                         productName: "Alma BB",
                         price: "$1,260.00",
                         photo: "img/Alma_BB-removebg-preview.png"
-                    },{
+                        // ladies handbag
+                    }]
+                  var ladieshandbag =[  {
                         id: 21,
                         productName: "LV x YK Capucines Compact Wallet",
                         price: " $870.00",
@@ -1217,7 +1221,8 @@
                         productName: "Card Holder",
                         price: " $230.00",
                         photo: "img/Ladies Wallets Pictures/Card_Holder-removebg-preview.png"
-                    },{
+                    }]
+                    var mensbagpack = [{
                         id: 31,
                         productName: "Duo Sling Bag",
                         price: "$1,610.00",
@@ -1279,6 +1284,118 @@
                         price: " $2,080.00",
                         photo: "img/Mens Bags Pictures/S_Lock_Sling_Bag-removebg-preview.png"
                     }];
+ 
+ 
+    Showlvmenswallett(lvmenswallet);
+    Showladiesbag(ladiesbag);
+    Showladieshandbag(ladieshandbag);
+    Showmensbagpack(mensbagpack);
+
+    function Showlvmenswallett(product) {
+      var productHTML = "";
+        for (let i = 0; i < lvmenswallet.length; i++) {
+        var element = lvmenswallet[i];
+        productHTML += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
+          '<div class="div1 text-center"> ' +
+          ' <img class="img1" src="' + lvmenswallet[i].photo + '" alt=""> ' +
+
+          '<p class="text-center"> ' + lvmenswallet[i].productName + ' <br> ' +
+          ' <img src="" alt=""> white Leather<br> $ ' + lvmenswallet[i].price + ' <br> ' +
+          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + lvmenswallet[i].id + ')">Add To Cart </button> </p> </div> </div>';
+      }
+      document.getElementById("ID_ProductCard").innerHTML = productHTML;
+
+
+    }
+    function Showladiesbag(product) {
+      var mensWalletHTML = "";
+
+
+
+      for (let i = 0; i < ladiesbag.length; i++) {
+        var element = ladiesbag[i];
+        mensWalletHTML += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
+          '<div class="div1 text-center"> ' +
+          ' <img class="img1" src="' + ladiesbag[i].photo + '" alt=""> ' +
+
+          '<p class="text-center"> ' + ladiesbag[i].productName + ' <br> ' +
+          ' <img src="" alt=""> white Leather<br> $ ' + ladiesbag[i].price + ' <br> ' +
+          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + ladiesbag[i].id + ')">Add To Cart </button> </p> </div> </div>';
+      }
+      document.getElementById("ID_MensWallet").innerHTML = mensWalletHTML;
+
+
+    }
+    function Showladieshandbag(product) {
+      var mensHandBags = "";
+
+
+
+      for (let i = 0; i < ladieshandbag.length; i++) {
+        var element = ladieshandbag[i];
+        mensHandBags += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
+          '<div class="div1 text-center"> ' +
+          ' <img class="img1" src="' + ladieshandbag[i].photo + '" alt=""> ' +
+
+          '<p class="text-center"> ' + ladieshandbag[i].productName + ' <br> ' +
+          ' <img src="" alt=""> white Leather<br> $ ' + ladieshandbag[i].price + ' <br> ' +
+          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + ladieshandbag[i].id + ')">Add To Cart </button> </p> </div> </div>';
+      }
+      document.getElementById("ID_MenHandBags").innerHTML = mensHandBags;
+
+
+    }
+    function Showmensbagpack(product) {
+      var mensHandBags = "";
+
+
+
+      for (let i = 0; i < mensbagpack.length; i++) {
+        var element = mensbagpack[i];
+        mensHandBags += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
+          '<div class="div1 text-center"> ' +
+          ' <img class="img1" src="' + mensbagpack[i].photo + '" alt=""> ' +
+
+          '<p class="text-center"> ' + mensbagpack[i].productName + ' <br> ' +
+          ' <img src="" alt=""> white Leather<br> $ ' + mensbagpack[i].price + ' <br> ' +
+          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + mensbagpack[i].id + ')">Add To Cart </button> </p> </div> </div>';
+      }
+      document.getElementById("ID_MenHandBags").innerHTML = mensHandBags;
+
+
+    }
+
+
+    var SelectedProduct = [];
+    function btnAddToCart(param) {
+
+
+      var item = ProductsList.find(item => item.id === param);
+      var findID = SelectedProduct.some(x => x.id === param);
+      debugger
+      if (findID) {
+        alert("product already added");
+      }
+      else {
+
+        SelectedProduct.push(item);
+        var totalCart = SelectedProduct.length;
+        localStorage.setItem("cart", totalCart);
+        localStorage.setItem("OrderDetail",JSON.stringify(SelectedProduct));
+
+      }
+
+      console.log(SelectedProduct);
+      GetCartLength();
+
+
+    }
+    GetCartLength();
+    function GetCartLength() {
+      var TotalCartLength = 0;
+      TotalCartLength = localStorage.getItem("cart");
+      document.getElementById("ID_Cart").innerHTML = TotalCartLength;
+    }
 
                 </script>
                 <script src="js/bootstrap.min.js"></script>

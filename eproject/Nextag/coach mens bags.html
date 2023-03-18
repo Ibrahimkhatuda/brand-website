@@ -1011,7 +1011,7 @@
                     </footer>
                 </div>
     <script>
-        var coachmenwallet=[{
+var coachmenwallet=[{
             id:41,
             productName:"Double Billfold Wallet",
             price:" $175.00",
@@ -1072,7 +1072,7 @@
         price:"$95.00",
         photo:"img/wallet_pic_ab/Card_Case_In_Signature_Leather-removebg-preview.png"
        }];
-    var coachmenhandbag=[{
+var coachmenhandbag=[{
         input:51,
         productname:"Charter Backpack 24 In Signature Leather",
         price:"$450.00",
@@ -1253,7 +1253,122 @@ photo:"img/Couch Ladies Handbags/willow-removebg-preview.png"
     price:"$ 460",
     photo:"img/Couch Ladies Handbags/kit_3-removebg-preview.png"
 }];
- </script>
+
+    Showcoachmenwallet(coachmenwallet);
+    Showcoachmenhandbag(coachmenhandbag);
+    Showcoachwomenwallet(coachwomenwallet);
+    Showcoachwomenhandbags(coachwomenhandbags);
+
+    function Showcoachmenwallet(product) {
+      var productHTML = "";
+        for (let i = 0; i < coachmenwallet.length; i++) {
+        var element = coachmenwallet[i];
+        productHTML += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
+          '<div class="div1 text-center"> ' +
+          ' <img class="img1" src="' + coachmenwallet[i].photo + '" alt=""> ' +
+
+          '<p class="text-center"> ' + coachmenwallet[i].productName + ' <br> ' +
+          ' <img src="" alt=""> white Leather<br> $ ' + coachmenwallet[i].price + ' <br> ' +
+          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + coachmenwallet[i].id + ')">Add To Cart </button> </p> </div> </div>';
+      }
+      document.getElementById("ID_ProductCard").innerHTML = productHTML;
+
+
+    }
+    function Showcoachmenhandbag(product) {
+      var mensWalletHTML = "";
+
+
+
+      for (let i = 0; i < coachmenhandbag.length; i++) {
+        var element = coachmenhandbag[i];
+        mensWalletHTML += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
+          '<div class="div1 text-center"> ' +
+          ' <img class="img1" src="' + coachmenhandbag[i].photo + '" alt=""> ' +
+
+          '<p class="text-center"> ' + coachmenhandbag[i].productName + ' <br> ' +
+          ' <img src="" alt=""> white Leather<br> $ ' + coachmenhandbag[i].price + ' <br> ' +
+          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + coachmenhandbag[i].id + ')">Add To Cart </button> </p> </div> </div>';
+      }
+      document.getElementById("ID_MensWallet").innerHTML = mensWalletHTML;
+
+
+    }
+    function Showcoachwomenwallet(product) {
+      var mensHandBags = "";
+
+
+
+      for (let i = 0; i < coachwomenwallet.length; i++) {
+        var element = coachwomenwallet[i];
+        mensHandBags += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
+          '<div class="div1 text-center"> ' +
+          ' <img class="img1" src="' + coachwomenwallet[i].photo + '" alt=""> ' +
+
+          '<p class="text-center"> ' + coachwomenwallet[i].productName + ' <br> ' +
+          ' <img src="" alt=""> white Leather<br> $ ' + coachwomenwallet[i].price + ' <br> ' +
+          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + coachwomenwallet[i].id + ')">Add To Cart </button> </p> </div> </div>';
+      }
+      document.getElementById("ID_MenHandBags").innerHTML = mensHandBags;
+
+
+    }
+    function Showcoachwomenhandbags(product) {
+      var mensHandBags = "";
+
+
+
+      for (let i = 0; i < coachwomenhandbags.length; i++) {
+        var element = coachwomenhandbags[i];
+        mensHandBags += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
+          '<div class="div1 text-center"> ' +
+          ' <img class="img1" src="' + coachwomenhandbags[i].photo + '" alt=""> ' +
+
+          '<p class="text-center"> ' + coachwomenhandbags[i].productName + ' <br> ' +
+          ' <img src="" alt=""> white Leather<br> $ ' + coachwomenhandbags[i].price + ' <br> ' +
+          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + coachwomenhandbags[i].id + ')">Add To Cart </button> </p> </div> </div>';
+      }
+      document.getElementById("ID_MenHandBags").innerHTML = mensHandBags;
+
+
+    }
+
+
+    var SelectedProduct = [];
+    function btnAddToCart(param) {
+
+
+      var item = ProductsList.find(item => item.id === param);
+      var findID = SelectedProduct.some(x => x.id === param);
+      debugger
+      if (findID) {
+        alert("product already added");
+      }
+      else {
+
+        SelectedProduct.push(item);
+        var totalCart = SelectedProduct.length;
+        localStorage.setItem("cart", totalCart);
+        localStorage.setItem("OrderDetail",JSON.stringify(SelectedProduct));
+
+      }
+
+      console.log(SelectedProduct);
+      GetCartLength();
+
+
+    }
+    GetCartLength();
+    function GetCartLength() {
+      var TotalCartLength = 0;
+      TotalCartLength = localStorage.getItem("cart");
+      document.getElementById("ID_Cart").innerHTML = TotalCartLength;
+    }
+
+
+
+
+</script>
 </body>
 
 </html>
