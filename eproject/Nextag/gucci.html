@@ -94,7 +94,7 @@
               <li><a class="dropdown-item" href="allbrands.html">All brands </a></li>
               <li><a class="dropdown-item active" href="gucci.html">Gucci</a></li>
               <li><a class="dropdown-item" href="LouisVuitton.html">Louis Vuitton </a></li>
-              <li><a class="dropdown-item" href="coach mens bags.html">Coach</a></li>
+              <li><a class="dropdown-item" href="coach.html">Coach</a></li>
             </ul>
           </li>
         </ul>
@@ -825,15 +825,29 @@
     function btnAddToCart(param) {
 
 
-      var item = ProductsList.find(item => item.id === param);
+            var item = ProductsList.find(item => item.id === param);
+            var item2 = menwallet.find(item => item.id === param);
+            // var item3 = ladieshandbag.find(item => item.id === param);
+            var item4 = menhandbag.find(item => item.id === param);
+
+
+
       var findID = SelectedProduct.some(x => x.id === param);
       debugger
       if (findID) {
         alert("product already added");
       }
       else {
+               if(item !=null)
+                SelectedProduct.push(item);
+               else if(item2 !=null)
+                SelectedProduct.push(item2);
 
-        SelectedProduct.push(item);
+               else if(item3 !=null)
+                SelectedProduct.push(item3);
+                
+              else  if(item4 !=null)
+                SelectedProduct.push(item4);
         var totalCart = SelectedProduct.length;
         localStorage.setItem("cart", totalCart);
         localStorage.setItem("OrderDetail",JSON.stringify(SelectedProduct));
@@ -848,8 +862,8 @@
     GetCartLength();
     function GetCartLength() {
       var TotalCartLength = 0;
-      TotalCartLength = localStorage.getItem("cart");
-      document.getElementById("ID_Cart").innerHTML = TotalCartLength;
+      TotalCartLength =JSON.parse(localStorage.getItem("OrderDetail"));
+      document.getElementById("ID_Cart").innerHTML = TotalCartLength.length;
     }
 
 
