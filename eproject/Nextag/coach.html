@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="C:\Users\asp\Desktop\Nextag Assingment\Louis Vuitton mens.css">
+    <title>Coach Mens Bags</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <link rel="stylesheet" href="css/style.css">
-    <title>Mens Wallets</title>
+    <script src="js/bootstrap.min.js"></script>
     <style>
         .h1 {
             margin-top: 50px;
@@ -98,21 +97,22 @@
                     <li class="nav-item">
                         <a class="nav-link" href="aboutus.html">About Us</a>
                     </li>
-                  
+                   
                 </ul>
                 <ul class="navbar-nav ms-auto my-2 my-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link mx-2 text-uppercase" href="shippinglist.html"><i class="fa-solid fa-cart-shopping me-1"></i>
+                        <a class="nav-link mx-2 text-uppercase" href="shippinglist.html"><i
+                                class="fa-solid fa-cart-shopping me-1"></i>
 
                             <button type="button" class="btnCartNav position-relative">
-                              CART
-                              <span id="ID_Cart"
-                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-              
-              
-                              </span>
+                                CART
+                                <span id="ID_Cart"
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
+
+                                </span>
                             </button>
-                          </a>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-circle-user me-1"></i>
@@ -126,7 +126,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 col-lg-12 col-md-12 mb-lg-12 text-center h1">
-                    <H1>LOUIS VUITTON </H1>
+                    <h1>COACH </h1>
                     <h2>Men & Women Collection </h2>
                 </div>
             </div>
@@ -154,7 +154,6 @@
                 data-bs-target="#pills-women-wallet" type="button" role="tab" aria-controls="pills-profile"
                 aria-selected="false">Womens wallet Collection</button>
         </li>
-
     </ul>
     <div class="container-fluid">
 
@@ -162,21 +161,21 @@
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-men-wallet" role="tabpanel"
                 aria-labelledby="pills-home-tab">
-                <div id="ID_menwallet" class="row"></div>
+                <div class="row" id="ID_CoachMenWallet"></div>
+            </div>
+            <div class="tab-pane fade" id="pills-men-handbag" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row" id="ID_CoachMenhandbag"></div>
+
             </div>
             <div class="tab-pane fade" id="pills-women-handbag" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div id="IDhandbag" class="row"></div>
-
-
+                <div class="row" id="ID_CoachWomenHandbag"></div>
 
             </div>
             <div class="tab-pane fade" id="pills-women-wallet" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div id="IDwomenwallet" class="row"></div>
-            
-    </div>
-            <div class="tab-pane fade" id="pills-men-handbag" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div id="ID_MenHandBags" class="row"></div>
+                <div class="row" id="ID_CoachWomenWallet"></div>
+
             </div>
+
         </div>
     </div>
     <div class="text-center">
@@ -293,330 +292,325 @@
             </div>
         </footer>
     </div>
-
-
     <script>
-        var lvmenswallet = [{
-            id: 1,
-            productName: "Slender Wallet ",
-            price: "330.00",
-            photo: "img/Mens Wallets Pictures/Slender_wallet-removebg-preview.png"
+        var coachmenwallet = [{
+            id: 41,
+            productName: "Double Billfold Wallet",
+            price: " 175.00",
+            photo: "img/wallet_pic_ab/Double_Billfold_Wallet-removebg-preview.png"
         },
         {
-            id: 2,
-            productName: "Multiple Wallet",
-            price: " 380.00",
-            photo: "img/Mens Wallets Pictures/Multiple_Wallet-removebg-preview.png"
+            id: 42,
+            productName: "3-In-1 Wallet",
+            price: " 119.00",
+            photo: "img/wallet_pic_ab/3-In-1_Wallet-removebg-preview.png"
         },
         {
-            id: 3,
-            productName: "Amerigo Wallet",
-            price: "520.00",
-            photo: "img/Mens Wallets Pictures/Amerigo_Wallet-removebg-preview.png"
+            id: 43,
+            productName: "Card Case",
+            price: " 75.00",
+            photo: "img/wallet_pic_ab/Card_Case-removebg-preview.png"
         },
         {
-            id: 4,
-            productName: "LV x YK Pocket Organiser",
-            price: "475.00",
-            photo: "img/Mens Wallets Pictures/Pocket_Organiser-removebg-preview.png"
+            id: 44,
+            productName: "Zip Card Case In Signature Leather",
+            price: "125.00",
+            photo: "img/wallet_pic_ab/Zip_Card_Case_In_Signature_Leather-removebg-preview.png"
         },
         {
-            id: 5,
-            productName: "Zippy Vertical Wallet",
-            price: " 695.00",
-            photo: "img/Mens Wallets Pictures/Zippy_Vertical_Wallet-removebg-preview.png"
+            id: 45,
+            productName: "Zip Card Case With Rexy",
+            price: "125.00",
+            photo: "img/wallet_pic_ab/Zip_Card_Case_With_Rexy-removebg-preview.png"
         },
         {
-            id: 6,
-            productName: "Pocket Organiser Card Holder",
-            price: "470.00",
-            photo: "img/Mens Wallets Pictures/Pocket_Organiser_Card_Holder-removebg-preview.png"
+            id: 46,
+            productName: "Zip Card Case With Coach Badge",
+            price: "125.00",
+            photo: "img/wallet_pic_ab/Zip_Card_Case_With_Coach_Badge-removebg-preview.png"
         },
         {
-            id: 7,
-            productName: "Coin Card Holder",
-            price: "420.00",
-            photo: "img/Mens Wallets Pictures/Coin_Card_Holder-removebg-preview.png"
+            id: 47,
+            productName: "Coachies Card Case With Winkie",
+            price: "125.00",
+            photo: "img/wallet_pic_ab/Coachies_Card_Case_With_Winkie-removebg-preview.png"
         },
         {
-            id: 8,
-            productName: "Hybrid Wallet",
-            price: " 485.00",
-            photo: "img/Mens Wallets Pictures/Hybrid_Wallet-removebg-preview.png"
+            id: 48,
+            productName: "Coachies Card Case With Sparkie",
+            price: " 125.00",
+            photo: "img/wallet_pic_ab/Coachies_Card_Case_With_Sparkie-removebg-preview.png"
+
         },
         {
-            id: 9,
-            productName: "Multiple Wallet",
-            price: "1,730.00",
-            photo: "img/Mens Wallets Pictures/Multiple_Wallet2-removebg-preview.png"
+            id: 49,
+            productName: "Card Case",
+            price: " 95.00",
+            photo: "img/wallet_pic_ab/Card_Case-removebg-preview2.png"
         },
         {
-            id: 10,
-            productName: "Pocket Organiser",
-            price: "1,310.00",
-            photo: "img/Mens Wallets Pictures/Multiple_Wallet2-removebg-preview.png"
-        }]
-        var ladiesbag = [{
-            // ladies handbag
-            id: 11,
-            productName: "Dauphine MM Bag",
-            price: " 2,710.00",
-            photo: "img/Dauphine_MM_Bag-removebg-preview.png"
+            id: 50,
+            productName: "Card Case In Signature Leather",
+            price: "95.00",
+            photo: "img/wallet_pic_ab/Card_Case_In_Signature_Leather-removebg-preview.png"
+        }];
+        var coachmenhandbag = [{
+            input: 51,
+            productname: "Charter Backpack 24 In Signature Leather",
+            price: "450.00",
+            photo: "img/Coach Mens Bags Pictures/Charter_Backpack_24_In_Signature_Leather-removebg-preview.png"
         },
         {
-            id: 12,
-            productName: "Pochette Double Zip On Strap",
-            price: " 1,220.00",
-            photo: "img/Pochette_Double_Zip_On_Strap-removebg-preview.png"
+            input: 52,
+            productName: "Charter Backpack With Horse And Carriage Print",
+            price: "495.00",
+            photo: "img/Coach Mens Bags Pictures/Charter_Backpack_With_Horse_And_Carriage_Print-removebg-preview.png"
         },
         {
-            id: 13,
-            productName: "Louis Vuitton New Wave Multi Pochette",
-            price: "1,940.00",
-            photo: "img/Louis_Vuitton_New_Wave_Multi_Pochette-removebg-preview.png"
+            input: 53,
+            productName: "Gotham Backpack In Signature Canvas",
+            price: "450.00",
+            photo: "img/Coach Mens Bags Pictures/Gotham_Backpack_In_Signature_Canvas-removebg-preview.png"
         },
         {
-            id: 14,
-            productName: "Bella Tote Bag",
-            price: "3,750.00",
-            photo: "img/Bella_Tote_Bag-removebg-preview.png"
+            input: 54,
+            productName: "Charter Crossbody 24",
+            price: "395.00",
+            photo: "img/Coach Mens Bags Pictures/Charter_Crossbody_24-removebg-preview.png"
         },
         {
-            id: 15,
-            productName: " Neverfull MM",
-            price: "2,040.00",
-            photo: "img/Neverfull_MM-removebg-preview.png"
+            input: 55,
+            productName: "Charter Crossbody 24 In Signature Canvas",
+            price: "395.00",
+            photo: "img/Coach Mens Bags Pictures/Charter_Crossbody_24_In_Signature_Canvas-removebg-preview.png"
         },
         {
-            id: 16,
-            productName: "LV x YK Neverfull MM Tote Bag",
-            price: " 2,130.00",
-            photo: "img/LV_x_YK_Neverfull_MM_Tote_Bag-removebg-preview (1).png"
-        },
-        {
-            id: 17,
-            productName: "CarryAll MM Bag",
-            price: " 1,790.00",
-            photo: "img/CarryAll_MM_Bag-removebg-preview.png"
-        },
-        {
-            id: 18,
-            productName: "Carmel Hobo Bag",
-            price: " 3,750.00",
-            photo: "img/Carmel_hobo_bag-removebg-preview.png"
-        },
-        {
-            id: 19,
-            productname: "Multi Pochette Accessoires",
-            price: " 2,030.00",
-            photo: "img/Multi_Pochette_Accessoires-removebg-preview.png"
-        },
-        {
-            id: 20,
-            productName: "Alma BB",
-            price: "1,260.00",
-            photo: "img/Alma_BB-removebg-preview.png"
-            // ladies handbag
-        }]
-        var ladieshandbag = [{
-            id: 21,
-            productName: "LV x YK Capucines Compact Wallet",
-            price: " 870.00",
-            photo: "img/Ladies Wallets Pictures/LV_x_YK_Capucines_Compact_Wallet-removebg-preview.png",
-        },
-        {
-            id: 22,
-            productName: "LV x YK Sarah Wallet",
-            price: " 720.00",
-            photo: "img/Ladies Wallets Pictures/LV_x_YK_Sarah_Wallet-removebg-preview.png"
-        },
-        {
-            id: 23,
-            productName: "Rosalie Coin Purse",
+            input: 56,
+            productName: "Charter Crossbody With Hybrid Pouch With Camo",
             price: "350.00",
-            photo: "img/Ladies Wallets Pictures/Rosalie_Coin_Purse-removebg-preview.png"
+            photo: "img/Coach Mens Bags Pictures/Charter_Crossbody_With_Hybrid_Pouch_With_Camo-removebg-preview.png"
         },
         {
-            id: 24,
-            productName: "LV x YK Victorine Wallet",
-            price: "650.00",
-            photo: "img/Ladies Wallets Pictures/LV_x_YK_Victorine_Wallet-removebg-preview.png"
+            input: 57,
+            productName: "Charter Belt Bag 7 In Signature Denim4",
+            price: " 195.00",
+            photo: "img/Coach Mens Bags Pictures/Charter_Belt_Bag_7_In_Signature_Denim-removebg-preview.png"
         },
         {
-            id: 25,
-            productName: "LV x YK Zippy Wallet",
-            price: "875.00",
-            photo: "img/Ladies Wallets Pictures/LV_x_YK_Zippy2_Wallet-removebg-preview.png"
+            input: 58,
+            productName: "League Belt Bag In Signature Jacquard",
+            price: " 350.00",
+            photo: "img/Coach Mens Bags Pictures/League_Belt_Bag_In_Signature_Jacquard-removebg-preview.png"
         },
         {
-            id: 26,
-            productName: "Lockmini Wallet",
-            price: " 435.00",
-            photo: "img/Ladies Wallets Pictures/Lockmini_Wallet-removebg-preview.png"
+            input: 59,
+            productName: "League Belt Bag",
+            price: "350.00",
+            photo: "img/Coach Mens Bags Pictures/League_Belt_Bag-removebg-preview.png"
         },
         {
-            id: 27,
-            productName: "Victorine Wallet",
-            price: " 550.00",
-            photo: "img/Ladies Wallets Pictures/Victorine_Wallet-removebg-preview.png"
+            input: 60,
+            productName: "Charter Crossbody 24 In Horse And Carriage Print Canvas",
+            price: "395.00",
+            photo: "img/Coach Mens Bags Pictures/Charter_Crossbody_24_In_Horse_And_Carriage_Print_Canvas-removebg-preview.png"
+        }];
+        var coachwomenwallet = [{
+            input: 61,
+            productName: "Wyn Small Wallett",
+            price: " 450",
+            photo: "img/Coachwallets pictures/Wyn1-removebg-preview.png"
         },
         {
-            id: 28,
-            productname: "Sarah Wallet",
-            price: " 580.00",
-            photo: "img/Ladies Wallets Pictures/Sarah_Wallet-removebg-preview.png"
+            input: 62,
+            productName: " Half Flap Card Case",
+            price: " 560",
+            photo: "img/Coachwallets pictures/half-removebg-preview.png"
         },
         {
-            id: 29,
-            productName: "Passport Cover",
-            price: " 300.00",
-            photo: "img/Ladies Wallets Pictures/Passport_Cover-removebg-preview.png"
+            input: 63,
+            productName: " Wyn Small Wallet In Colorblock",
+            price: " 580",
+            photo: "img/Coachwallets pictures/wyn2-removebg-preview.png"
         },
         {
-            id: 30,
-            productName: "Card Holder",
-            price: " 230.00",
-            photo: "img/Ladies Wallets Pictures/Card_Holder-removebg-preview.png"
-        }]
-        var mensbagpack = [{
-            id: 31,
-            productName: "Duo Sling Bag",
-            price: "1,610.00",
-            photo: "img/Mens Bags Pictures/Duo_Sling_Bag-removebg-preview.png"
+            input: 64,
+            productName: " Wyn Small Wallet With Floral Print",
+            price: "450",
+            photo: "img/Coachwallets pictures/wyn3-removebg-preview.png"
         },
         {
-            id: 32,
-            productName: "City Keepall Bag",
-            price: "1,830.00",
-            photo: "img/Mens Bags Pictures/City_Keepall_Bag-removebg-preview.png"
+            input: 65,
+            productName: " Bifold Snap Wallet In Signature Canvas",
+            price: " 545",
+            photo: "img/Coachwallets pictures/bifold-removebg-preview.png"
         },
         {
-            id: 33,
-            productName: "Kasai Clutch",
-            price: "1,060.00",
-            photo: "img/Mens Bags Pictures/Kasai_Clutch-removebg-preview.png"
-        },
-        {
-            id: 34,
-            productName: "Racer Backpack",
-            price: " 2,320.00",
-            photo: "img/Mens Bags Pictures/Racer_Backpack-removebg-preview.png"
-        },
-        {
-            id: 35,
-            productName: "Christopher MM Backpack",
-            price: " 2,360.00",
-            photo: "img/Mens Bags Pictures/Christopher_MM_Backpack-removebg-preview.png"
+            input: 66,
+            productName: "Tabby Small Wallet Polished Pebble Leather",
+            price: " 545",
+            photo: "img/Coachwallets pictures/tabby1-removebg-preview.png"
 
         },
         {
-            id: 36,
-            productname: "Josh Backpack",
-            price: "1,600.00",
-            photo: "img/Mens Bags Pictures/Josh_Backpack-removebg-preview.png"
+            input: 67,
+            productName: "Billfold Wallet With Rivets",
+            price: " 810",
+            photo: "img/Coachwallets pictures/rivets-removebg-preview.png"
         },
         {
-            id: 37,
-            productName: "Takeoff Backpack",
-            price: "2,370.00",
-            photo: "img/Mens Bags Pictures/Takeoff_Messenger-removebg-preview.png"
+            input: 68,
+            productName: "Bandit Wallet",
+            price: "  760 ",
+            photo: "img/Coachwallets pictures/bandit-removebg-preview.png"
         },
         {
-            id: 38,
-            productName: "Takeoff Messenger",
-            price: "1,940.00",
-            photo: "img/Mens Bags Pictures/Takeoff_Messenger-removebg-preview.png"
+            input: 69,
+            productName: "Wyn Small Wallet",
+            price: "$ 295",
+            photo: "img/Coachwallets pictures/small-removebg-preview.png"
         },
         {
-            id: 39,
-            productName: "Biker Messenger Bag",
-            price: " 3,400.00",
-            photo: "img/Mens Bags Pictures/Biker_Messenger_Bag-removebg-preview.png"
-
+            input: 70,
+            productName: "Wyn Small Wallet",
+            price: "  440",
+            photo: "img/Coachwallets pictures/wyn4-removebg-preview.png"
+        }];
+        var coachwomenhandbags = [{
+            input: 71,
+            productName: "Cary Crossbody In Signature Canvas ",
+            price: "  250",
+            photo: "img/Couch Ladies Handbags/cary-removebg-preview.png"
         },
         {
-            id: 40,
-            productName: "S Lock Sling Bag",
-            price: " 2,080.00",
-            photo: "img/Mens Bags Pictures/S_Lock_Sling_Bag-removebg-preview.png"
+            input: 72,
+            productName: " Kip Turnlock Crossbody",
+            price: "  560",
+            photo: "img/Couch Ladies Handbags/kip-removebg-preview.png"
+        },
+        {
+            input: 73,
+            productName: " Willow Shoulder Bag ",
+            price: " 580",
+            photo: "img/Couch Ladies Handbags/willow-removebg-preview.png"
+        },
+        {
+            input: 74,
+            productName: " Luna Shoulder Bag",
+            price: "  490",
+            photo: "img/Couch Ladies Handbags/luna-removebg-preview.png"
+        },
+        {
+            input: 75,
+            productName: " Disney X Coach Studio Shoulder",
+            price: "  450",
+            photo: "img/Couch Ladies Handbags/mickey-removebg-preview.png"
+        },
+        {
+            input: 76,
+            productName: "Studio Shoulder Bag ",
+            price: " 545",
+            photo: "img/Couch Ladies Handbags/studio-removebg-preview.png"
+        },
+        {
+            input: 77,
+            productName: "Rogue 20 In Colorblock",
+            price: "  760 ",
+            photo: "img/Couch Ladies Handbags/rogue1-removebg-preview.png"
+        },
+        {
+            input: 78,
+            productName: " Disney X Coach Rogue 25 ",
+            price: "  730",
+            photo: "img/Couch Ladies Handbags/disney_x-removebg-preview.png"
+        },
+        {
+            input: 79,
+            productName: " Willow Bucket Bag",
+            price: "  295",
+            photo: "img/Couch Ladies Handbags/willow_1-removebg-preview.png"
+        },
+        {
+            input: 80,
+            productName: " Kitt Messenger Crossbody",
+            price: " 460",
+            photo: "img/Couch Ladies Handbags/kit_3-removebg-preview.png"
         }];
 
+        Showcoachmenwallet(coachmenwallet);
+        Showcoachmenhandbag(coachmenhandbag);
+        Showcoachwomenwallet(coachwomenwallet);
+        Showcoachwomenhandbags(coachwomenhandbags);
 
-        Showlvmenswallett(lvmenswallet);
-        Showladiesbag(ladiesbag);
-        Showladieshandbag(ladieshandbag);
-        Showmensbagpack(mensbagpack);
-
-        function Showlvmenswallett(product) {
+        function Showcoachmenwallet(product) {
             var productHTML = "";
-            for (let i = 0; i < lvmenswallet.length; i++) {
-                var element = lvmenswallet[i];
+            for (let i = 0; i < coachmenwallet.length; i++) {
+                var element = coachmenwallet[i];
                 productHTML += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
                     '<div class="div1 text-center"> ' +
-                    ' <img class="img1" src="' + lvmenswallet[i].photo + '" alt=""> ' +
+                    ' <img class="img1" src="' + coachmenwallet[i].photo + '" alt=""> ' +
 
-                    '<p class="text-center"> ' + lvmenswallet[i].productName + ' <br> ' +
-                    ' <img src="" alt=""> white Leather<br> $ ' + lvmenswallet[i].price + ' <br> ' +
-                    '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + lvmenswallet[i].id + ')">Add To Cart </button> </p> </div> </div>';
+                    '<p class="text-center"> ' + coachmenwallet[i].productName + ' <br> ' +
+                    ' <img src="" alt=""> white Leather<br> $ ' + coachmenwallet[i].price + ' <br> ' +
+                    '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + coachmenwallet[i].id + ')">Add To Cart </button> </p> </div> </div>';
             }
-            document.getElementById("ID_menwallet").innerHTML = productHTML;
+            document.getElementById("ID_CoachMenWallet").innerHTML = productHTML;
 
 
         }
-        function Showladiesbag(product) {
+        function Showcoachmenhandbag(product) {
             var mensWalletHTML = "";
 
 
 
-            for (let i = 0; i < ladiesbag.length; i++) {
-                var element = ladiesbag[i];
+            for (let i = 0; i < coachmenhandbag.length; i++) {
+                var element = coachmenhandbag[i];
                 mensWalletHTML += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
                     '<div class="div1 text-center"> ' +
-                    ' <img class="img1" src="' + ladiesbag[i].photo + '" alt=""> ' +
+                    ' <img class="img1" src="' + coachmenhandbag[i].photo + '" alt=""> ' +
 
-                    '<p class="text-center"> ' + ladiesbag[i].productName + ' <br> ' +
-                    ' <img src="" alt=""> white Leather<br> $ ' + ladiesbag[i].price + ' <br> ' +
-                    '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + ladiesbag[i].id + ')">Add To Cart </button> </p> </div> </div>';
+                    '<p class="text-center"> ' + coachmenhandbag[i].productName + ' <br> ' +
+                    ' <img src="" alt=""> white Leather<br> $ ' + coachmenhandbag[i].price + ' <br> ' +
+                    '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + coachmenhandbag[i].id + ')">Add To Cart </button> </p> </div> </div>';
             }
-            document.getElementById("IDwomenwallet").innerHTML = mensWalletHTML;
+            document.getElementById("ID_CoachMenhandbag").innerHTML = mensWalletHTML;
 
 
         }
-        function Showladieshandbag(product) {
+        function Showcoachwomenwallet(product) {
             var mensHandBags = "";
 
 
 
-            for (let i = 0; i < ladieshandbag.length; i++) {
-                var element = ladieshandbag[i];
+            for (let i = 0; i < coachwomenwallet.length; i++) {
+                var element = coachwomenwallet[i];
                 mensHandBags += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
                     '<div class="div1 text-center"> ' +
-                    ' <img class="img1" src="' + ladieshandbag[i].photo + '" alt=""> ' +
+                    ' <img class="img1" src="' + coachwomenwallet[i].photo + '" alt=""> ' +
 
-                    '<p class="text-center"> ' + ladieshandbag[i].productName + ' <br> ' +
-                    ' <img src="" alt=""> white Leather<br> $ ' + ladieshandbag[i].price + ' <br> ' +
-                    '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + ladieshandbag[i].id + ')">Add To Cart </button> </p> </div> </div>';
+                    '<p class="text-center"> ' + coachwomenwallet[i].productName + ' <br> ' +
+                    ' <img src="" alt=""> white Leather<br> $ ' + coachwomenwallet[i].price + ' <br> ' +
+                    '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + coachwomenwallet[i].id + ')">Add To Cart </button> </p> </div> </div>';
             }
-            document.getElementById("IDhandbag").innerHTML = mensHandBags;
+            document.getElementById("ID_CoachWomenWallet").innerHTML = mensHandBags;
 
 
         }
-        function Showmensbagpack(product) {
+        function Showcoachwomenhandbags(product) {
             var mensHandBags = "";
 
 
 
-            for (let i = 0; i < mensbagpack.length; i++) {
-                var element = mensbagpack[i];
+            for (let i = 0; i < coachwomenhandbags.length; i++) {
+                var element = coachwomenhandbags[i];
                 mensHandBags += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
                     '<div class="div1 text-center"> ' +
-                    ' <img class="img1" src="' + mensbagpack[i].photo + '" alt=""> ' +
+                    ' <img class="img1" src="' + coachwomenhandbags[i].photo + '" alt=""> ' +
 
-                    '<p class="text-center"> ' + mensbagpack[i].productName + ' <br> ' +
-                    ' <img src="" alt=""> white Leather<br> $ ' + mensbagpack[i].price + ' <br> ' +
-                    '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + mensbagpack[i].id + ')">Add To Cart </button> </p> </div> </div>';
+                    '<p class="text-center"> ' + coachwomenhandbags[i].productName + ' <br> ' +
+                    ' <img src="" alt=""> white Leather<br> $ ' + coachwomenhandbags[i].price + ' <br> ' +
+                    '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + coachwomenhandbags[i].id + ')">Add To Cart </button> </p> </div> </div>';
             }
-            document.getElementById("ID_MenHandBags").innerHTML = mensHandBags;
+            document.getElementById("ID_CoachWomenHandbag").innerHTML = mensHandBags;
 
 
         }
@@ -624,12 +618,12 @@
 
         var SelectedProduct = [];
         function btnAddToCart(param) {
-            var item = lvmenswallet.find(item => item.id === param);
-            var item2 = ladiesbag.find(item => item.id === param);
-            var item3 = ladieshandbag.find(item => item.id === param);
-            var item4 = mensbagpack.find(item => item.id === param);
 
 
+            var item = coachmenwallet.find(item => item.id === param);
+            var item2 = coachmenhandbag.find(item => item.id === param);
+            var item3 = coachwomenwallet.find(item => item.id === param);
+            var item4 = coachwomenhandbags.find(item => item.id === param);
 
             var findID = SelectedProduct.some(x => x.id === param);
             debugger
@@ -637,17 +631,17 @@
                 alert("product already added");
             }
             else {
-                if(item !=null)
-                SelectedProduct.push(item);
-               else if(item2 !=null)
-                SelectedProduct.push(item2);
 
-               else if(item3 !=null)
-                SelectedProduct.push(item3);
-                
-              else  if(item4 !=null)
-                SelectedProduct.push(item4);
+                if (item != null)
+                    SelectedProduct.push(item);
+                else if (item2 != null)
+                    SelectedProduct.push(item2);
 
+                else if (item3 != null)
+                    SelectedProduct.push(item3);
+
+                else if (item4 != null)
+                    SelectedProduct.push(item4);
                 var totalCart = SelectedProduct.length;
                 localStorage.setItem("cart", totalCart);
                 localStorage.setItem("OrderDetail", JSON.stringify(SelectedProduct));
@@ -657,6 +651,7 @@
             console.log(SelectedProduct);
             GetCartLength();
 
+
         }
         GetCartLength();
         function GetCartLength() {
@@ -665,8 +660,10 @@
       document.getElementById("ID_Cart").innerHTML = TotalCartLength.length;
     }
 
+
+
+
     </script>
-    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

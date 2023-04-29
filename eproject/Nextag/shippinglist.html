@@ -2,52 +2,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipping List</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-3.6.3.min.js"></script>
-    <style>
-        .div1 {
-            margin-top: 50px;
-            margin-left: 50px;
-        }
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <style>
+    .div1 {
+      margin-top: 50px;
+      margin-left: 50px;
+    }
 
-        .row1 {
-            background-color: white;
-            padding-top: 30px;
-        }
+    .row1 {
+      background-color: white;
+      padding-top: 30px;
+    }
 
-        .cont1 {
-            background-color: antiquewhite;
-            margin-top: 40px;
-            padding: 40px;
-        }
+    .cont1 {
+      background-color: antiquewhite;
+      margin-top: 40px;
+      padding: 40px;
+    }
 
-        h4 {
-            background-color: bisque;
-            padding-left: 10px;
-        }
+    h4 {
+      background-color: bisque;
+      padding-left: 10px;
+    }
 
-        h1 {
-           
-            padding-left: 10px;
-        }
+    h1 {
 
-        .div2 {
-            background-color: bisque;
-            padding-left: 10px;
-        }
+      padding-left: 10px;
+    }
 
-        .btn2 {
-            background-color: sienna;
-            color: white;
-        }
-    </style>
+    .div2 {
+      background-color: bisque;
+      padding-left: 10px;
+    }
+
+    .btn2 {
+      background-color: sienna;
+      color: white;
+    }
+    table tr td{
+      vertical-align: middle;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
@@ -75,7 +79,7 @@
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
     <div class="container-fluid">
       <!-- <a class="navbar-brand" href="#"><i class="fa-solid fa-shop me-2"></i> <strong>NEXTAG</strong></a> -->
-      <img class="logo"  src="img/logo/nextag-logos/nextag-logos_white.png" alt="">
+      <img class="logo" src="img/logo/nextag-logos/nextag-logos_white.png" alt="">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -84,12 +88,6 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactus.html">Contact us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutus.html">About Us</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -100,13 +98,21 @@
               <li><a class="dropdown-item" href="allbrands.html">All brands </a></li>
               <li><a class="dropdown-item" href="gucci.html">Gucci</a></li>
               <li><a class="dropdown-item" href="LouisVuitton.html">Louis Vuitton </a></li>
-              <li><a class="dropdown-item" href="coach mens bags.html">Coach</a></li>
+              <li><a class="dropdown-item" href="coach.html">Coach</a></li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+         
         </ul>
         <ul class="navbar-nav ms-auto my-2 my-lg-0 ">
           <li class="nav-item">
-            <a class="nav-link mx-2 text-uppercase" href="shippinglist.html"><i class="fa-solid fa-cart-shopping me-1"></i>
+            <a class="nav-link mx-2 text-uppercase" href="shippinglist.html"><i
+                class="fa-solid fa-cart-shopping me-1"></i>
 
               <button type="button" class="btnCartNav position-relative">
                 CART
@@ -126,32 +132,34 @@
       </div>
     </div>
   </nav>
-    <section class="h-100 h-custom" >
-        <div class="container py-5 h-100">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-12">
-              <div class="card card-registration card-registration-2" style="border-radius: 15px;">
-                <div class="card-body p-0">
-                  <div class="row g-0">
-                    <div class="col-lg-8">
-                      <div class="p-5">
-                        <div class="d-flex justify-content-between align-items-center mb-5">
-                          <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
-                          <h6 class="mb-0 " ></h6>
-                        </div>
-                        
-      
-                        <hr class="my-4">
-      
-                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+  <section class="h-100 h-custom">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12">
+          <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+            <div class="card-body p-0">
+              <div class="row g-0">
+                <div class="col-lg-8">
+                  <div class="p-5">
+                    <div class="d-flex justify-content-between align-items-center mb-5">
+                      <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
+                      <h6 class="mb-0 "></h6>
+                    </div>
+
+
+                    <hr class="my-4">
+                    <table class="table table-bordered" id="ID_cartDataTbl">
+
+                    </table>
+                    <!-- <div class="row mb-4 d-flex justify-content-between align-items-center">
                           <div class="col-md-2 col-lg-2 col-xl-2">
                             <img
                               src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
                               class="img-fluid rounded-3" alt="Cotton T-shirt">
                           </div>
-                          <div class="col-md-3 col-lg-3 col-xl-3">
-                            <h6 class="text-muted" id="ID_productName"></h6>
-                            <!-- <h6 class="text-black mb-0">Cotton T-shirt</h6> -->
+                          <div class="col-md-3 col-lg-3 col-xl-3" id="ID_productName">
+                           
+                            <h6 class="text-black mb-0">Cotton T-shirt</h6>
                           </div>
                           <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
                             <button id="" class="btn btn-link px-2"
@@ -167,259 +175,315 @@
                               <i class="fas fa-plus"></i>
                             </button>
                           </div>
-                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                            <h6 class="mb-0" id="ID_productPrice"></h6>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1" id="ID_productPrice">
+                           
                           </div>
                           <div class="col-md-1 col-lg-1 col-xl-1 text-end">
                             <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
                           </div>
-                        </div>
-      
-                        <hr class="my-4">
-      
-                      
-      
-                        <div class="pt-5">
-                          <h6 class="mb-0"><a href="#!" class="text-body"><i
-                                class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
+                        </div> -->
+
+                    <hr class="my-4">
+
+
+
+                    <div class="pt-5">
+                      <h6 class="mb-0"><a href="#!" class="text-body"><i
+                            class="fas fa-long-arrow-alt-left me-2"></i><a href="allbrands.html">Back to shop</a> </a></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 bg-grey">
+                  <div class="p-5">
+                    <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
+                    <hr class="my-4">
+
+                    <form class="row g-3 needs-validation" novalidate>
+
+
+                      <div class="col-md-12">
+                        <label for="validationCustomUsername" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                          <input type="text" class="form-control"  id="validationCustomUsername"
+                            aria-describedby="inputGroupPrepend" required>
+                          <div class="invalid-feedback">
+                            Please choose a username.
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-4 bg-grey">
-                      <div class="p-5">
-                        <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
-                        <hr class="my-4">
-      
-                        <form class="row g-3 needs-validation" novalidate>
-                           
-                          
-                            <div class="col-md-12">
-                              <label for="validationCustomUsername" class="form-label">Username</label>
-                              <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                                <div class="invalid-feedback">
-                                  Please choose a username.
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-12">
-                                <label for="validationCustomUsername" class="form-label">Email</label>
-                                <div class="input-group has-validation">
-                                 
-                                  <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                                  <div class="invalid-feedback">
-                                    Please Enter valid email address
-                                  </div>
-                                </div>
-                              </div>
-                            <div class="col-md-12">
-                              <label for="validationCustom03" class="form-label">City</label>
-                              <input type="text" class="form-control" id="validationCustom03" required>
-                              <div class="invalid-feedback">
-                                Please provide a valid city.
-                              </div>
-                            </div>
-                            <div class="col-md-12">
-                                <label for="validationCustom04" class="form-label">Country</label>
-                                <select class="form-select" id="validationCustom04" required>
-                                  <option selected disabled value="">Choose...</option>
-                                  <option>Country</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                  Please select a valid state.
-                                </div>
-                              </div>
-                           
-                            <div class="col-12">
-                              <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                <label class="form-check-label" for="invalidCheck">
-                                  Agree to terms and conditions
-                                </label>
-                                <div class="invalid-feedback">
-                                  You must agree before submitting.
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-12">
-                              <button class="btn btn-primary" type="submit">Order Now</button>
-                            </div>
-                          </form>
-      
+                      <div class="col-md-12">
+                        <label for="validationCustomUsername" class="form-label">Email</label>
+                        <div class="input-group has-validation">
+
+                          <input type="email" class="form-control" id="validationCustomUseremail"
+                            aria-describedby="inputGroupPrepend" required>
+                          <div class="invalid-feedback">
+                            Please Enter valid email address
+                          </div>
+                        </div>
                       </div>
-                    </div>
+                      <div class="col-md-12">
+                        <label for="validationCustom03" class="form-label">City</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid city.
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="validationCustom04" class="form-label">Country</label>
+                        <select class="form-select" id="validationCustom04" required>
+                          <option selected disabled value="">Choose...</option>
+                          <option>Country</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid state.
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                          </label>
+                          <div class="invalid-feedback">
+                            You must agree before submitting.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn btn-primary" type="button" onclick="btnOrderNow()">Order Now</button>
+                      </div>
+                    </form>
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <div class="text-center">
-        <footer class="text-center text-lg-start bg-dark text-light">
-            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-                <div class="me-5 d-none d-lg-block ">
-                    <span>Get connected with us on social networks:</span>
-                </div>
-                <div>
-                    <a href="" class="me-4 link-secondary">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="" class="me-4 link-secondary">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="" class="me-4 link-secondary">
-                        <i class="fab fa-google"></i>
-                    </a>
-                    <a href="" class="me-4 link-secondary">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="" class="me-4 link-secondary">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="" class="me-4 link-secondary">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-    
-            </section>
-    
-    
-    
-            <section class="">
-                <div class="container text-center text-md-start mt-5">
-    
-                    <div class="row mt-3">
-    
-                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4  text-lg-start">
-    
-                            <h6 class="text-uppercase fw-bold mb-4">
-                                <i class="fas fa-gem me-3 text-secondary"></i>Store Information
-                            </h6>
-                            <p>
-                                <img class="next1" src="img/footer images/icons8-location-mark-40.png" alt="">
-                        NEXTAG-Brand store<br>
-                            LuckyOne Mall
-                                , Main Rashid Minhas Rd, Karachi
-                            Karachi,Pakistan
-                            </p>
-                            <p><img class="next1" src="img/footer images/icons8-phone-30.png" alt=""> 000000000</p>
-                            <p><img class="next1" src="img/footer images/icons8-mail-30.png" alt="">  sales@yourcomanygmail.com</p>
-    
-                        </div>
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-    
-                            <h6 class="text-uppercase fw-bold mb-4">
-                                Information
-                            </h6>
-                            <p>
-                                <a href="aboutus.html" class="text-reset">About us</a>
-                            </p>
-                            <p>
-                                <a href="deliveryinformation.html" class="text-reset">Delivery Information</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Privacy policy</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Terms & condition</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Site Map</a>
-                            </p>
-                        </div>
-    
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-    
-                            <h6 class="text-uppercase fw-bold mb-4">
-                                My Account
-                            </h6>
-                            <p>
-                                <!-- <a href="#!" class="text-reset">My Account</a> -->
-                            </p>
-    
-                            <p>
-                                <a href="#!" class="text-reset">Wishlist</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Newsletter</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Help</a>
-                            </p>
-                        </div>
-                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                            <p><i class="fas fa-home me-3 text-secondary"></i>LuckyOne Mall
-                                , Karachi </p>
-                            <p>
-                                <i class="fas fa-envelope me-3 text-secondary"></i>
-                                info@example.com
-                            </p>
-                            <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
-                            <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-                © 2021 Copyright:
-                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-            </div>
-        </footer>
+      </div>
     </div>
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-  'use strict'
+  </section>
+  <div class="text-center">
+    <footer class="text-center text-lg-start bg-dark text-light">
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block ">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <div>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.querySelectorAll('.needs-validation')
+      </section>
 
-  // Loop over them and prevent submission
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
+
+
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+
+          <div class="row mt-3">
+
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4  text-lg-start">
+
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3 text-secondary"></i>Store Information
+              </h6>
+              <p>
+                <img class="next1" src="img/footer images/icons8-location-mark-40.png" alt="">
+                NEXTAG-Brand store<br>
+                LuckyOne Mall
+                , Main Rashid Minhas Rd, Karachi
+                Karachi,Pakistan
+              </p>
+              <p><img class="next1" src="img/footer images/icons8-phone-30.png" alt=""> 000000000</p>
+              <p><img class="next1" src="img/footer images/icons8-mail-30.png" alt=""> sales@yourcomanygmail.com</p>
+
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+              <h6 class="text-uppercase fw-bold mb-4">
+                Information
+              </h6>
+              <p>
+                <a href="aboutus.html" class="text-reset">About us</a>
+              </p>
+              <p>
+                <a href="deliveryinformation.html" class="text-reset">Delivery Information</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Privacy policy</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Terms & condition</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Site Map</a>
+              </p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+              <h6 class="text-uppercase fw-bold mb-4">
+                My Account
+              </h6>
+              <p>
+                <!-- <a href="#!" class="text-reset">My Account</a> -->
+              </p>
+
+              <p>
+                <a href="#!" class="text-reset">Wishlist</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Newsletter</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3 text-secondary"></i>LuckyOne Mall
+                , Karachi </p>
+              <p>
+                <i class="fas fa-envelope me-3 text-secondary"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+    </footer>
+  </div>
+<!-- modal done -->
+<div class="modal fade" id="Modal_Order" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
+  <script>
+
+
+
+
+
+    GetCartLength();
+    GetOrderDetailData();
+    function GetCartLength() {
+      var TotalCartLength = 0;
+      TotalCartLength =JSON.parse(localStorage.getItem("OrderDetail"));
+      document.getElementById("ID_Cart").innerHTML = TotalCartLength.length;
+    }
+    function GetOrderDetailData() {
+      var GetData;
+      GetData = JSON.parse(localStorage.getItem("OrderDetail"));
+      var ID_cartDataTbl = document.getElementById("ID_cartDataTbl");
+      let table = "<tr><th>Product Image</th><th>Product Name</th><th>Product Price</th><th>Action</th></tr>";
+      for (let i = 0; i < GetData.length; i++) {
+        table += "<tr><td> <img src='" + GetData[i].photo + "' style='width:200px;'/></td><td>"
+          + GetData[i].productName + "</td><td>" + GetData[i].price +
+          "</td><td><button type='button' class='btn btn-close' onclick=btnRemove('" + GetData[i].id + "') </button></td></tr>";
+      }
+      document.getElementById("ID_cartDataTbl").innerHTML = table;
+
+
+
+    }
+    function btnRemove(removeData) {
+      debugger
+      var GetData;
+      GetData = JSON.parse(localStorage.getItem("OrderDetail"));
+      for (var i = 0; i < GetData.length; i++) {
+        var items = GetData[i];
+
+        if (items.id == removeData) {
+          GetData.splice(i, 1);
         }
+      }
+      // items = JSON.stringify(items); //Restoring object left into items again
+      localStorage.setItem("OrderDetail", JSON.stringify(GetData));
+      GetOrderDetailData();
 
-        form.classList.add('was-validated')
-      }, false)
-    })
-})()
-    </script>
-    <script>
+      GetCartLength();
+    }
+    function btnOrderNow(){
+     var orderdetail = [];
+      var validationCustomUsername = document.getElementById("validationCustomUsername").innerHTML;
+      var validationCustomUseremail = document.getElementById("validationCustomUseremail").innerHTML;
+      var validationCustom03 = document.getElementById("validationCustom03").innerHTML;
+      var validationCustom04 = document.getElementById("validationCustom04").innerHTML;
+      var objOrderD = {
+        username : validationCustomUsername,
+        email : validationCustomUseremail,
+        city : validationCustom03,
+        country : validationCustom04,
 
-
-
-
-
-GetCartLength();
-GetOrderDetailData();
-function GetCartLength() {
-  var TotalCartLength = 0;
-  TotalCartLength = localStorage.getItem("cart");
-  document.getElementById("ID_Cart").innerHTML = TotalCartLength;
-}
-function GetOrderDetailData(){
-  var GetData ;
-  
-  GetData =JSON.parse(localStorage.getItem("OrderDetail"));
-  var ID_productName =document.getElementById("ID_productName");
-  var ID_productPrice =document.getElementById("ID_productPrice");
-
-  for (var i = 0; i < GetData.length; i++) {
-   var el = GetData[i];
-   ID_productName.innerHTML += GetData[i].productName;
-   ID_productPrice.innerHTML += GetData[i].price;
-
-    
-  }
-}
-
-    </script>
+      }
+      orderdetail.push(objOrderD);
+      // localStorage.setItem(JSON.stringify(orderdetail));
+      document.getElementById("Modal_Order").style.display =  'block';
+    }
+  </script>
 </body>
 
 </html>

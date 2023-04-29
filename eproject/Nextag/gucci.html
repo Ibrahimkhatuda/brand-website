@@ -79,12 +79,6 @@
           <li class="nav-item">
             <a class="nav-link " aria-current="page" href="index.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactus.html">Contact us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutus.html">About Us</a>
-          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
@@ -94,9 +88,16 @@
               <li><a class="dropdown-item" href="allbrands.html">All brands </a></li>
               <li><a class="dropdown-item active" href="gucci.html">Gucci</a></li>
               <li><a class="dropdown-item" href="LouisVuitton.html">Louis Vuitton </a></li>
-              <li><a class="dropdown-item" href="coach mens bags.html">Coach</a></li>
+              <li><a class="dropdown-item" href="coach.html">Coach</a></li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+         
         </ul>
         <ul class="navbar-nav ms-auto my-2 my-lg-0 ">
           <li class="nav-item">
@@ -620,7 +621,8 @@
       productName: "Gucci Blondie shoulder bag Black Leather",
       price: "1000.00",
       photo: "img/grid1/handbag-9__1_-removebg-preview.png"
-    },
+    }, ]
+    var menwallet=[
     {
       id: 111,
       productName: "Ophidia GG wallet Grey and black Leather",
@@ -681,64 +683,68 @@
       price: "1000.00",
       photo: "img/men wallet/wallet_10-removebg-preview.png"
     },
+  ]
+  var menhandbag =[
+
+  
     {
       id: 121,
       productName: " Small duffle bag with tonal Double G",
-      price: " $ 2,800",
+      price: "  2,800",
       photo: "img/men handbags/handbag1-removebg-preview.png"
     },
     {
       id: 122,
       productName: " Small duffle bag with tonal Double G",
-      price: "$ 2,800",
+      price: " 2,800",
       photo: "img/men handbags/handbag2-removebg-preview.png"
     },
     {
       id: 123,
       productName: " GG embossed mini duffle bag",
-      price: "$ 2,500",
+      price: " 2,500",
       photo: "img/men handbags/handbag3-removebg-preview.png"
     },
     {
       id: 124,
       productName: " Gucci Horsebit 1955 shoulder bag",
-      price: "$ 4,250",
+      price: " 4,250",
       photo: "img/men handbags/handbag8-removebg-preview.png"
     },
     {
       id: 125,
       productName: "GG Messenger bag",
-      price: "$ 1,600",
+      price: "1,600",
       photo: "img/men handbags/hand_bag6-removebg-preview.png"
     },
     {
       id: 126,
       productName: "Shoulder bag with Interlocking G",
-      price: "$ 1,450",
+      price: " 1,450",
       photo: "img/men handbags/handbag7-removebg-preview.png"
     },
     {
       id: 127,
       productName: "GG Messenger bag",
-      price: "$1600",
+      price: "1600",
       photo: "img/men handbags/hand_bag6-removebg-preview.png"
     },
     {
       id: 128,
       productName: "Jumbo GG large duffle bag",
-      price: " $ 3,980",
+      price: " 3,980",
       photo: "img/men handbags/handbag9-removebg-preview.png"
     },
     {
       id: 129,
       productName: "Jumbo GG large duffle bag",
-      price: "$3,100",
+      price: "3,100",
       photo: "img/men handbags/HANDBAG12-removebg-preview.png"
     },
     {
       id: 130,
       productName: " Small duffle bag with tonal Double G",
-      price: " $ 2,800",
+      price: "  2,800",
       photo: "img/men handbags/handbag1-removebg-preview.png"
     }
     ];
@@ -752,8 +758,8 @@
 
 
     ShowProduct(ProductsList);
-    ShowMensWallet(ProductsList);
-    ShowMensHandBags(ProductsList)
+    ShowMensWallet(menwallet);
+    ShowMensHandBags(menhandbag)
 
     function ShowProduct(product) {
       var productHTML = "";
@@ -779,15 +785,15 @@
 
 
 
-      for (let i = 0; i < ProductsList.length; i++) {
-        var element = ProductsList[i];
+      for (let i = 0; i < menwallet.length; i++) {
+        var element = menwallet[i];
         mensWalletHTML += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
           '<div class="div1 text-center"> ' +
-          ' <img class="img1" src="' + ProductsList[i].photo + '" alt=""> ' +
+          ' <img class="img1" src="' + menwallet[i].photo + '" alt=""> ' +
 
-          '<p class="text-center"> ' + ProductsList[i].productName + ' <br> ' +
-          ' <img src="" alt=""> white Leather<br> $ ' + ProductsList[i].price + ' <br> ' +
-          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + ProductsList[i].id + ')">Add To Cart </button> </p> </div> </div>';
+          '<p class="text-center"> ' + menwallet[i].productName + ' <br> ' +
+          ' <img src="" alt=""> white Leather<br> $ ' + menwallet[i].price + ' <br> ' +
+          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + menwallet[i].id + ')">Add To Cart </button> </p> </div> </div>';
       }
       document.getElementById("ID_MensWallet").innerHTML = mensWalletHTML;
 
@@ -799,15 +805,15 @@
 
 
 
-      for (let i = 0; i < ProductsList.length; i++) {
-        var element = ProductsList[i];
+      for (let i = 0; i < menhandbag.length; i++) {
+        var element = menhandbag[i];
         mensHandBags += ' <div class=" col-sm-12 col-lg-3 col-md-6 mb-lg-3 ">' +
           '<div class="div1 text-center"> ' +
-          ' <img class="img1" src="' + ProductsList[i].photo + '" alt=""> ' +
+          ' <img class="img1" src="' + menhandbag[i].photo + '" alt=""> ' +
 
-          '<p class="text-center"> ' + ProductsList[i].productName + ' <br> ' +
-          ' <img src="" alt=""> white Leather<br> $ ' + ProductsList[i].price + ' <br> ' +
-          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + ProductsList[i].id + ')">Add To Cart </button> </p> </div> </div>';
+          '<p class="text-center"> ' + menhandbag[i].productName + ' <br> ' +
+          ' <img src="" alt=""> white Leather<br> $ ' + menhandbag[i].price + ' <br> ' +
+          '<button class="btn1" id="ID_btn"  type="button" onclick="btnAddToCart(' + menhandbag[i].id + ')">Add To Cart </button> </p> </div> </div>';
       }
       document.getElementById("ID_MenHandBags").innerHTML = mensHandBags;
 
@@ -820,15 +826,29 @@
     function btnAddToCart(param) {
 
 
-      var item = ProductsList.find(item => item.id === param);
+            var item = ProductsList.find(item => item.id === param);
+            var item2 = menwallet.find(item => item.id === param);
+            // var item3 = ladieshandbag.find(item => item.id === param);
+            var item4 = menhandbag.find(item => item.id === param);
+
+
+
       var findID = SelectedProduct.some(x => x.id === param);
       debugger
       if (findID) {
         alert("product already added");
       }
       else {
+               if(item !=null)
+                SelectedProduct.push(item);
+               else if(item2 !=null)
+                SelectedProduct.push(item2);
 
-        SelectedProduct.push(item);
+               else if(item3 !=null)
+                SelectedProduct.push(item3);
+                
+              else  if(item4 !=null)
+                SelectedProduct.push(item4);
         var totalCart = SelectedProduct.length;
         localStorage.setItem("cart", totalCart);
         localStorage.setItem("OrderDetail",JSON.stringify(SelectedProduct));
@@ -843,8 +863,8 @@
     GetCartLength();
     function GetCartLength() {
       var TotalCartLength = 0;
-      TotalCartLength = localStorage.getItem("cart");
-      document.getElementById("ID_Cart").innerHTML = TotalCartLength;
+      TotalCartLength =JSON.parse(localStorage.getItem("OrderDetail"));
+      document.getElementById("ID_Cart").innerHTML = TotalCartLength.length;
     }
 
 
